@@ -35,47 +35,68 @@
       <section class="intro">
         <h1>Каталог товаров</h1>
       </section>
-      <section class="catalog section">
+      <section class="section catalog">
         <div class="catalog__container container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img class="catalog__pic">
+              <a href="product1.html">
+                <img class="catalog__pic" src="http://placehold.it/150x100" width="260" height="195" alt="Игрушка Зайчик-попрыгайчик. Фото">
+              </a>
               <p class="catalog__info">
-                <h2 class="catalog__title">Зайчик-попрыгйчик</h2>
+                <h2 class="catalog__title">
+                  <a href="product1.html">Зайчик-попрыгайчик</a>
+                </h2>
                 <span class="catalog__size">Рост 30 см, вес 200 г</span>
               </p>
-              <p class="catalog__price">
-                1 200 руб.
+              <p class="catalog__shop">
+                <span class="catalog__price">1 200 руб.</span>
+                <button class="button catalog__button" type="button">
+                  <img class="catalog__cart" src="http://placehold.it/150x100" width="20" height="20" alt="Добавить товар в корзину">
+                </button>
               </p>
             </li>
             <li class="catalog__item">
-              <img class="catalog__pic">
+              <a href="product2.html">
+                <img class="catalog__pic" src="http://placehold.it/150x100" width="260" height="195" alt="Корзинка для белья. Фото">
+              </a>
               <p class="catalog__info">
-                <h2 class="catalog__title">Корзинка для белья</h2>
+                <h2 class="catalog__title">
+                  <a href="product2.html">Корзинка для белья</a>
+                </h2>
                 <span class="catalog__size">Диаметр 15 см, высота 10 см</span>
               </p>
-              <p class="catalog__price">
-                690 руб.
+              <p class="catalog__shop">
+                <span class="catalog__price">690 руб.</span>
+                <button class="button catalog__button" type="button">
+                  <img class="catalog__cart" src="http://placehold.it/150x100" width="20" height="20" alt="Добавить товар в корзину">
+                </button>
               </p>
             </li>
             <li class="catalog__item">
-              <img class="catalog__pic">
+              <a href="product3.html">
+                <img class="catalog__pic" src="http://placehold.it/150x100" width="260" height="195" alt="Большая корзинка для игрушек. Фото">
+              </a>
               <p class="catalog__info">
-                <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+                <h2 class="catalog__title">
+                  <a href="product2.html">Большая корзинка для игрушек</a>
+                </h2>
                 <span class="catalog__size">Диаметр 30 см, высота 30 см</span>
               </p>
-              <p class="catalog__price">
-                1 500 руб.
+              <p class="catalog__shop">
+                <span class="catalog__price"> 1 500 руб.</span>
+                <button class="button catalog__button" type="button">
+                  <img class="catalog__cart" src="http://placehold.it/150x100" width="20" height="20" alt="Добавить товар в корзину">
+                </button>
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="movie section">
+      <section class="section movie">
         <div class="movie__container container">
           <h2>Процесс производства</h2>
           <p class="movie__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="button">Сделать заказ</button>
+          <button class="button" type="button">Сделать заказ</button>
           <video class="movie__movie" src="" controls></video>
         </div>
       </section>
@@ -113,7 +134,7 @@
         <label for="small">S</label>
         <label for="medium">M</label>
         <label for="large">L</label>
-        <button class="button button__modal">Добавить</button>
+        <button class="button button__modal" type="button">Добавить</button>
       </form>
     </div>
   </body>
