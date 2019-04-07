@@ -1,0 +1,25 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 0 rgb(237, 237, 237), inset 0 1px 0 0 rgb(236, 236, 236);
+}
+
+.site-list__link {
+  display: block;
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}

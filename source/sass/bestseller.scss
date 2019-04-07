@@ -1,0 +1,62 @@
+.bestseller {
+  background-color: rgb(255, 255, 255);
+}
+
+.bestseller__container {
+  box-sizing: border-box;
+}
+
+.bestseller__tag {
+  margin-bottom: 24px;
+  padding-top: 5px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgb(99, 209, 187);
+  text-transform: uppercase;
+}
+
+.bestseller__description {
+  margin: 0;
+  padding: 0;
+}
+
+.bestseller__table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bestseller__row {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid red;
+}
+
+.bestseller__field {
+  width: 92px;
+  margin: 0;
+  padding: 0;
+}
+
+.bestseller__value {
+  margin: 0;
+  padding: 0;
+}
+
+.bestseller__pic {
+  margin-bottom: 28px;
+}
+
+.bestseller__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.bestseller__order {
+  box-sizing: border-box;
+}

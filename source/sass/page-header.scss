@@ -1,0 +1,24 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 var(#ececec);
+}
+
+.page-header__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 79px;
+}
+
+.page-header__logo {
+  display: inline-flex;
+}
+
+.page-header__logo-image {
+  margin: 0;
+  padding: 0;
+}

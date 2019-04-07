@@ -1,0 +1,26 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 20px;
+  height: 14px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  // временно
+  background: red;
+  border: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
