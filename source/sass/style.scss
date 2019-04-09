@@ -1,37 +1,4 @@
-@font-face {
-  font-style: normal;
-  font-weight: 300;
-  font-family: "open_sans";
-
-  src: local("OpenSans"),
-    url("/fonts/opensans.woff2") format("woff2"),
-    url("/fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 100;
-  font-family: "open_sans";
-
-  src: local("OpenSans"),
-    url("/fonts/opensanslight.woff2") format("woff2"),
-    url("/fonts/opensanslight.woff") format("woff");
-}
-
-body {
-  width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 24px;
-  font-family: "open_sans", "Arial", sans-serif;
-  color: rgb(68, 68, 68);
-  letter-spacing: normal;
-  background-color: coral;
-}
-
+@import "source/sass/scaffolding.scss";
 @import "source/sass/container.scss";
 @import "source/sass/button.scss";
 @import "source/sass/page-header.scss";
