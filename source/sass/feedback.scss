@@ -1,0 +1,29 @@
+.feedback {
+  background-color: rgb(255, 255, 255);
+}
+
+.feedback__container {
+  box-sizing: border-box;
+}
+
+.feedback__quote {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  line-height: 30px;
+}
+
+.feedback__author {
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  display: block;
+  margin-top: 34px;
+  color: rgb(0, 0, 0);
+}
+
+.feedback__channel {
+  line-height: 30px;
+  font-style: normal;
+  display: block;
+}

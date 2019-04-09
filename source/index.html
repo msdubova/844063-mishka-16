@@ -3,29 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин милых вещиц для дома ручной работы Mishka</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container container">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
-        </a>
+      <div class="page-header__container">
+        <div class=" container">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+          </a>
+        </div>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="" class="user-list__search">Поиск по сайту</a>
+              <a class="user-list__link" href="" class="user-list__search">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a href="" class="user-list__cart">Корзина<span>:пока пуста</span></a>
+              <a class="user-list__link" href="" class="user-list__cart">Корзина<span>: пока пуста</span></a>
             </li>
           </ul>
         </nav>
@@ -33,31 +37,31 @@
     </header>
     <main class="page-main">
       <section class="intro intro--main">
-        <h1>Милые штуки ручной работы для дома</h1>
+        <h1 class="intro__title intro__title--main">Милые штуки ручной работы для дома</h1>
         <ul class="intro__list">
           <li class="intro__item">
-            <a href="" href="">Предметы интерьера</a>
+            <a class="intro__link" href="">Предметы интерьера</a>
           </li>
           <li class="intro__item">
-            <a href="">Детские игрушки</a>
+            <a class="intro__link" href="">Детские игрушки</a>
           </li>
         </ul>
       </section>
       <section class="section bestseller">
         <div class="bestseller__container container">
-          <h2>Вязаные корзинки</h2>
+          <h2 class="section__title">Вязаные корзинки</h2>
           <span class="bestseller__tag">Товар недели</span>
           <p class="bestseller__description">Экологически чистая пряжа, ручная работа. Доступны в шести  расцветках, и трех размерах.</p>
           <table class ="bestseller__table">
-            <tr>
+            <tr class="bestseller__row">
               <td class="bestseller__field">Цвет:</td>
               <td class="bestseller__value">«Тиффани»/серый</td>
             </tr>
-            <tr>
+            <tr class="bestseller__row">
               <td class="bestseller__field">Диаметр:</td>
               <td class="bestseller__value">25 см</td>
             </tr>
-            <tr>
+            <tr class="bestseller__row">
               <td class="bestseller__field">Высота:</td>
               <td class="bestseller__value">15 см</td>
             </tr>
@@ -69,26 +73,26 @@
       </section>
       <section class="section advantages">
         <div class="advantages_container container">
-          <h2>Коротко о нас</h2>
-          <ul class="advantages_list">
-            <li class="advantages-item">Экологически чистые материалы
+          <h2 class="section__title">Коротко о нас</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">Экологически чистые материалы
             </li>
-            <li class="advantages-item">Скандинавский стиль по российской цене
+            <li class="advantages__item">Скандинавский стиль по российской цене
             </li>
-            <li class="advantages-item">Увеличивает лайки на фотографиях
+            <li class="advantages__item">Увеличивает лайки на фотографиях
             </li>
-            <li class="advantages-item">Связано вручную с любовью и умилением
+            <li class="advantages__item">Связано вручную с любовью и умилением
             </li>
-            <li class="advantages-item">Поддержка отечественного производителя
+            <li class="advantages__item">Поддержка отечественного производителя
             </li>
-            <li class="advantages-item">Поставляется в подарочной упаковке
+            <li class="advantages__item">Поставляется в подарочной упаковке
             </li>
           </ul>
         </div>
       </section>
       <section class="section feedback">
         <div class="feedback__container container">
-          <h2>Отзывы</h2>
+          <h2 class="section__title">Отзывы</h2>
           <div class="slider">
             <blockquote class="feedback__quote slider-item">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -96,8 +100,8 @@
               <cite class="feedback__channel">@misssssiskras</cite>
             </blockquote>
             <p class="feedback__toggles slider__toggles">
-              <button class="slider__toggle button button__backward" type="button">Предыдущий отзыв</button>
-              <button class="slider__toggle button button__forward" type="button">Следующий отзыв</button>
+              <button class="slider__toggle button__backward" type="button">Предыдущий отзыв</button>
+              <button class="slider__toggle button__forward" type="button">Следующий отзыв</button>
             </p>
             <button class="button feedback_apply" type="button">Написать</button>
           </div>
@@ -105,7 +109,7 @@
       </section>
       <section class="section contacts">
         <div class="contacts__container container">
-          <h2>Контакты</h2>
+          <h2 class="section__title">Контакты</h2>
           <table class="contacts_info">
             <tr>
               <td class="contacts__field"><a href="mailto:">e-mail:</a></td>
@@ -140,7 +144,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
         </div>

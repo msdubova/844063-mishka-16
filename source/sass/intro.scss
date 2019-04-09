@@ -1,0 +1,75 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 177px;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(241, 241, 241);
+}
+
+.intro--main {
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 488px;
+
+  background-image: url("http://placehold.it/150x100");
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  width: 244px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.intro__title--main {
+  display: inline-flex;
+  align-self: center;
+  margin-bottom: 120px;
+
+  text-align: center;
+}
+
+.intro__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.intro__item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(99, 209, 187);
+}
+
+.intro__item:nth-of-type(2n) {
+  background-color: rgb(86, 195, 178);
+}
+
+.intro__link {
+  width: 106px;
+  margin: 0;
+  padding: 30px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
