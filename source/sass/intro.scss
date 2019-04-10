@@ -1,23 +1,25 @@
 .intro {
+  background-color: rgb(241, 241, 241);
+  min-height: 177px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  height: 177px;
-  margin: 0;
-  padding: 0;
-
-  background-color: rgb(241, 241, 241);
 }
 
 .intro--main {
+  min-height: 488px;
   justify-content: flex-end;
-  align-items: flex-start;
-  height: 488px;
-
   background-image: url("http://placehold.it/150x100");
   background-repeat: no-repeat;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .intro__title {
@@ -28,13 +30,6 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-}
-
-.intro__title--main {
-  display: inline-flex;
-  align-self: center;
-  margin-bottom: 120px;
-
   text-align: center;
 }
 
@@ -63,7 +58,7 @@
 }
 
 .intro__link {
-  width: 106px;
+  width: 100%;
   margin: 0;
   padding: 30px;
 
@@ -72,4 +67,74 @@
   line-height: 24px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    height: 160px;
+  }
+
+  .intro--main {
+    height: 685px;
+  }
+
+  .intro__title {
+    display: inline-flex;
+    justify-content: center;
+    width: 500px;
+
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .intro__list {
+    width: $tablet-width;
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .intro-item {
+    width: 50%;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .intro--main {
+    height: 685px;
+  }
+
+  .intro__title {
+    display: inline-flex;
+    justify-content: center;
+    width: 610px;
+
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .intro__list {
+    width: $desktop-width;
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 120px;
+  }
 }

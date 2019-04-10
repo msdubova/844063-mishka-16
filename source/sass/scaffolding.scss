@@ -18,9 +18,13 @@
     url("/fonts/opensanslight.woff") format("woff");
 }
 
+html {
+  min-height: 320px;
+}
+
 body {
   box-sizing: border-box;
-  width: 320px;
+  width: auto;
   margin: 0;
   padding: 0;
 
@@ -39,3 +43,11 @@ body {
 *::after {
   box-sizing: inherit;
 }
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }

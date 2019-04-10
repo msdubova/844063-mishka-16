@@ -16,16 +16,30 @@
 }
 
 .advantages__item {
-  max-width: 251px;
-  padding-top: 85px;
   position: relative;
+
+  width: 100%;
+  padding-top: 85px;
 }
 
 .advantages__item::before {
   content: "";
   position: absolute;
+  top: 28px;
+
   width: 32px;
   height: 32px;
-  top: 28px;
+
   background-image: url("http://placehold.it/150x100");
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    flex-wrap: wrap;
+    height: 345px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
 }

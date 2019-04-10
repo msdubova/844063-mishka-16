@@ -8,36 +8,37 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
-        <div class=" container">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="" class="user-list__search">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="" class="user-list__cart">Корзина<span>: пока пуста</span></a>
-            </li>
-          </ul>
-        </nav>
+      <div class="container page-header__container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <ul class="page-header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="" class="user-list__search">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="" class="user-list__cart">Корзина<span>: пока пуста</span></a>
+          </li>
+        </ul>
+        <ul class="page-header__list page-header__list--bonus">
+          <li>Бесплатная доставка по России</li>
+        </ul>
       </div>
     </header>
     <main class="page-main">
       <section class="intro intro--main">
-        <h1 class="intro__title intro__title--main">Милые штуки ручной работы для дома</h1>
+        <div class="intro__container container">
+          <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
+        </div>
         <ul class="intro__list">
           <li class="intro__item">
             <a class="intro__link" href="">Предметы интерьера</a>
@@ -49,26 +50,34 @@
       </section>
       <section class="section bestseller">
         <div class="bestseller__container container">
-          <h2 class="section__title">Вязаные корзинки</h2>
-          <span class="bestseller__tag">Товар недели</span>
-          <p class="bestseller__description">Экологически чистая пряжа, ручная работа. Доступны в шести  расцветках, и трех размерах.</p>
-          <table class ="bestseller__table">
-            <tr class="bestseller__row">
-              <td class="bestseller__field">Цвет:</td>
-              <td class="bestseller__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="bestseller__row">
-              <td class="bestseller__field">Диаметр:</td>
-              <td class="bestseller__value">25 см</td>
-            </tr>
-            <tr class="bestseller__row">
-              <td class="bestseller__field">Высота:</td>
-              <td class="bestseller__value">15 см</td>
-            </tr>
-          </table>
-          <img class="bestseller__pic" src="http://placehold.it/150x100" width="260"; height="315";>
-          <b class="bestseller__price">Цена: 990 руб.</b>
-          <button class="button bestseller__order" type="button">Заказать</button>
+          <div class="bestseller__title">
+            <h2 class="section__title">Вязаные корзинки</h2>
+            <span class="bestseller__tag">Товар недели</span>
+          </div>
+          <div class="bestseller__description">
+            <p class="bestseller__info">Экологически чистая пряжа, ручная работа. Доступны в шести  расцветках, и трех размерах.</p>
+            <table class ="bestseller__table">
+              <tr class="bestseller__row">
+                <td class="bestseller__field">Цвет:</td>
+                <td class="bestseller__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="bestseller__row">
+                <td class="bestseller__field">Диаметр:</td>
+                <td class="bestseller__value">25 см</td>
+              </tr>
+              <tr class="bestseller__row">
+                <td class="bestseller__field">Высота:</td>
+                <td class="bestseller__value">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="bestseller__image">
+            <img class="bestseller__pic" src="http://placehold.it/150x100" width="260"; height="315";>
+          </div>
+          <div class="bestseller__cart">
+            <b class="bestseller__price">Цена: 990 руб.</b>
+            <button class="button bestseller__order" type="button">Заказать</button>
+          </div>
         </div>
       </section>
       <section class="section advantages">
@@ -103,32 +112,35 @@
               <button class="slider__toggle button__backward" type="button">Предыдущий отзыв</button>
               <button class="slider__toggle button__forward" type="button">Следующий отзыв</button>
             </p>
-            <button class="button feedback_apply" type="button">Написать</button>
+            <button class="button feedback__apply" type="button">Написать</button>
           </div>
         </div>
       </section>
       <section class="section contacts">
         <div class="contacts__container container">
           <h2 class="section__title">Контакты</h2>
-          <table class="contacts_info">
-            <tr>
-              <td class="contacts__field"><a href="mailto:">e-mail:</a></td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__field">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <div class="contacts__map">
-            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037875945433!2d30.320858716527443!3d59.93871647621458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554210739063!5m2!1sru!2sru" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+          <div class="contacts__info">
+            <div class="contacts__row">
+              <span class="contacts__field"><a href="mailto:">e-mail:</a></span>
+              <span class="contacts__value">info@mimimishkashop.ru</span>
+            </div>
+            <div class="contacts__row">
+              <span class="contacts__field">адрес:</span>
+              <span class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </div>
           </div>
-          <button class="button button-mail" type="button">Напишите нам</button>
         </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037875945433!2d30.320858716527443!3d59.93871647621458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554210739063!5m2!1sru!2sru" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+        </div>
+        <button class="button button-mail" type="button">Напишите нам</button>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

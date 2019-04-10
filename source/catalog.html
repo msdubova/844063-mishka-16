@@ -8,36 +8,37 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
-        <div class=" container">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="" class="user-list__search">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="" class="user-list__cart">Корзина<span>: пока пуста</span></a>
-            </li>
-          </ul>
-        </nav>
+      <div class="container page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <ul class="page-header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="" class="user-list__search">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="" class="user-list__cart">Корзина<span>: пока пуста</span></a>
+          </li>
+        </ul>
+        <ul class="page-header__list page-header__list--bonus">
+          <li>Бесплатная доставка по России</li>
+        </ul>
       </div>
     </header>
     <main class="page-main">
       <section class="intro">
-        <h1 class="intro__title">Каталог товаров</h1>
+        <div class="intro__container container">
+          <h1 class="intro__title">Каталог товаров</h1>
+        </div>
       </section>
       <section class="section catalog">
         <div class="catalog__container container">
@@ -107,6 +108,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
