@@ -18,15 +18,11 @@
     url("/fonts/opensanslight.woff") format("woff");
 }
 
-html {
-  min-height: 320px;
-}
-
 body {
-  box-sizing: border-box;
-  width: auto;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  min-width: 320px;
 
   font-weight: 300;
   font-size: 15px;
@@ -35,15 +31,19 @@ body {
   color: rgb(68, 68, 68);
   letter-spacing: normal;
 
-  background-color: coral;
+  background-color: rgb(255, 255, 255);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 // @media (min-width: $tablet-width) {
 
 // }
