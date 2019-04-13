@@ -9,10 +9,9 @@
 .page-header__container--logo {
   position: relative;
 
-  margin: 0 auto;
-  padding: 22px 30px;
+  margin: auto;
+  padding: 22px 0;
 
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -62,15 +61,12 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     width: $tablet-width;
-    margin: 0 auto;
     padding: 0 50px;
   }
 
   .page-header__container--logo {
     width: 48%;
-    margin: 0;
     padding: 0;
-    padding: 20px 0;
 
     text-align: left;
   }
@@ -101,11 +97,15 @@
   }
 
   .page-header__list--desktop a {
+    padding: 25px 0 0 0;
+
     font-size: 15px;
   }
 
   .page-header__container--logo {
     order: 2;
     width: 13%;
+
+    text-align: center;
   }
 }

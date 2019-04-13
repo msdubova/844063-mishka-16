@@ -1,8 +1,5 @@
 .user-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include reset-ul();
 }
 
 .user-list__item {
@@ -32,14 +29,12 @@
     position: relative;
 
     justify-content: flex-end;
-    align-items: center;
   }
 
   .user-list::after {
     content: "Бесплатная доставка по России*";
     position: absolute;
-    right: 0;
-    bottom: -45px;
+    top: 110px;
   }
 
   .user-list__item {
@@ -47,24 +42,19 @@
     box-shadow: none;
   }
 
-  .user-list__item:last-child {
-    flex-grow: 1;
-  }
-
   .user-list__link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 31px 0 31px 31px;
   }
 
   .user-list__link img {
     position: static;
+
+    padding-right: 31px;
   }
 
   .user-list__link--search {
-    padding-right: 31px;
-
     font-size: 0;
   }
 }
@@ -72,5 +62,6 @@
 @media (min-width: $desktop-width) {
   .user-list {
     order: 3;
+    width: 43%;
   }
 }

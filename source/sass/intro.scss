@@ -9,7 +9,6 @@
 }
 
 .intro--main {
-  justify-content: flex-end;
   min-height: 488px;
 
   background-image: url("http://placehold.it/150x100");
@@ -19,20 +18,18 @@
 .intro__container {
   display: flex;
   flex-grow: 1;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .intro__title {
   width: 244px;
-  margin: 0;
-  padding: 0;
 
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  color: $black-000;
 }
 
 .intro__list {
@@ -40,18 +37,14 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include reset-ul();
 }
 
 .intro__item {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 0;
-  padding: 0;
 
   background-color: rgb(99, 209, 187);
 }
@@ -62,7 +55,6 @@
 
 .intro__link {
   width: 100%;
-  margin: 0;
   padding: 30px;
 
   font-weight: 700;
@@ -74,19 +66,16 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    height: 160px;
+    min-height: 226px;
   }
 
   .intro--main {
-    height: 685px;
+    min-height: 745px;
   }
 
   .intro__title {
-    display: inline-flex;
-    justify-content: center;
     width: 500px;
 
-    font-weight: 700;
     font-size: 43px;
     line-height: 50px;
   }
@@ -97,13 +86,7 @@
     padding: 0 50px;
   }
 
-  .intro-item {
-    width: 50%;
-  }
-
   .intro__link {
-    width: 120px;
-
     font-size: 20px;
     line-height: 30px;
   }
@@ -111,35 +94,21 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    height: 200px;
-    margin: 0 auto;
-    padding: 0 50px;
+    min-height: 255px;
   }
 
   .intro--main {
-    height: 685px;
+    min-height: 685px;
   }
 
   .intro__title {
-    display: inline-flex;
-    justify-content: center;
     width: 610px;
 
-    font-weight: 700;
     font-size: 53px;
     line-height: 57px;
   }
 
   .intro__list {
-    flex-direction: row;
     width: $desktop-width;
-    padding: 0 50px;
-  }
-
-  .intro__link {
-    width: 120px;
-
-    font-size: 20px;
-    line-height: 30px;
   }
 }
