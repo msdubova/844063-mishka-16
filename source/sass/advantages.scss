@@ -2,44 +2,44 @@
   background-color: rgb(255, 255, 255);
 }
 
-.advantages__container {
-  box-sizing: border-box;
-}
-
 .advantages__list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  margin-top: 30px;
 
-  list-style: none;
+  @include reset-ul();
 }
 
 .advantages__item {
-  position: relative;
+  margin-bottom: 30px;
 
-  width: 100%;
-  padding-top: 85px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
-.advantages__item::before {
-  content: "";
-  position: absolute;
-  top: 28px;
+.advantages__icon {
+  display: block;
+  margin-bottom: 20px;
 
-  width: 32px;
-  height: 32px;
-
-  background-image: url("http://placehold.it/150x100");
+  fill: rgb(99, 209, 187);
 }
 
 @media (min-width: $tablet-width) {
   .advantages__list {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    height: 345px;
+    height: 400px;
+    // Лена, тут, еще в разделе контакты у меня стоит flex column wrap. Если не ограничивать высоту блока, то перенос во вторую колонку не просиходит. Как делать перенос без фиксированной высоты?
   }
 
   .advantages__item {
+    box-sizing: border-box;
     width: 50%;
+    padding-right: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__container {
+    padding-left: 225px;
   }
 }

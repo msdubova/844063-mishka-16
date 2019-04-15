@@ -2,10 +2,6 @@
   background-color: rgb(255, 255, 255);
 }
 
-.feedback__container {
-  box-sizing: border-box;
-}
-
 .feedback__quote {
   margin: 0;
   margin-top: 28px;
@@ -18,9 +14,7 @@
   display: block;
   margin-top: 34px;
 
-  font-style: normal;
   font-weight: 700;
-  line-height: 24px;
   color: rgb(0, 0, 0);
 }
 
@@ -33,14 +27,38 @@
 
 @media (min-width: $tablet-width) {
   .feedback__container {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__title {
+    width: 50%;
+  }
+
+  .feedback__quote {
+    order: 3;
+    width: 100%;
+  }
+
+  .feedback__cite {
+    order: 4;
+    width: 50%;
+  }
+
+  .feedback__toggles {
+    order: 5;
+    width: 50%;
   }
 
   .feedback__apply {
-    position: absolute;
-    top: 30px;
-    right: 50px;
+    order: 2;
+    width: 30%;
+  }
+}
 
-    width: auto;
+@media (min-width: $desktop-width) {
+  .feedback__container {
+    padding-left: 225px;
   }
 }

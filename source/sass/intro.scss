@@ -5,15 +5,16 @@
   align-items: center;
   min-height: 177px;
 
-  background-color: rgb(255, 255, 255);
-  background-image: url("/img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
+  background-color: rgb(241, 241, 241);
 }
 
 .intro--main {
   min-height: 488px;
+
+  background-image: url("/img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
 }
 
 .intro__container {
@@ -78,8 +79,6 @@
     position: relative;
 
     min-height: 226px;
-
-    background-image: url("/img/hero-tablet@1x.jpg");
   }
 
   .intro::after {
@@ -98,6 +97,8 @@
 
   .intro--main {
     min-height: 745px;
+
+    background-image: url("/img/hero-tablet@1x.jpg");
   }
 
   .intro__note {
@@ -127,8 +128,6 @@
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 255px;
-
-    background-image: url("/img/hero-desktop@1x.jpg");
   }
 
   .intro::after {
@@ -138,6 +137,8 @@
 
   .intro--main {
     min-height: 685px;
+
+    background-image: url("/img/hero-desktop@1x.jpg");
   }
 
   .intro__title {
