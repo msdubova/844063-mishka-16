@@ -1,3 +1,140 @@
 .form {
   background-color: rgb(255, 255, 255);
 }
+
+input {
+  display: none;
+}
+
+
+.form__fieldset {
+  padding: 20px 0;
+
+  border: none;
+  border-top: 1px solid #62d1ba;
+}
+
+.form__legend {
+  margin-bottom: 30px;
+  padding-right: 20px;
+
+  font-weight: 700;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__label {
+  position: relative;
+
+  display: block;
+  width: 155px;
+  margin-bottom: 25px;
+  padding-left: 62px;
+
+  font-weight: 700;
+  line-height: 18px;
+  color: $black-000;
+}
+
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: #ffffff;
+  border: 1px black solid;
+  box-shadow: 0 0 0 12px #ffffff inset,;
+  transform: translateY(-50%);
+}
+
+.form__label--radio::before {
+  border-radius: 50%;
+}
+
+input:checked + .form__label--radio::before {
+  background-color: #62d1ba;
+}
+
+input:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+
+  width: 38px;
+  height: 38px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form__text,
+.form__phone,
+.form__mail {
+  display: inline-block;
+}
+
+.form__label--text,
+.form__label--phone,
+.form__label--mail {
+  display: block;
+  padding-left: 0;
+}
+
+.form__label--text::before,
+.form__label--phone::before,
+.form__label--mail::before {
+  display: none;
+}
+
+.form__textarea {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  fieldset:nth-of-type(2n) {
+    background-color: rgb(241, 241, 241);
+  }
+
+  .form__fieldset {
+    position: relative;
+
+    display: flex;
+
+    border-top: none;
+  }
+
+  .form__fieldset--type .form__list,
+  .form__fieldset--name .form__list {
+    flex-direction: column;
+  }
+
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .form__legend {
+    position: absolute;
+    left: 35px;
+  }
+
+  .form__text--name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form__textarea {
+    width: 79%;
+    margin-left: auto;
+  }
+}
