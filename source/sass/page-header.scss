@@ -1,7 +1,6 @@
 .page-header {
-  border-bottom: red 1px solid;
-}
 
+}
 .page-header__container {
   margin: 0 auto;
 }
@@ -35,8 +34,7 @@
 
   font-size: 0;
 
-  background-color: red;
-  background-image: url("http://placehold.it/150x100");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   border: none;
   transform: translateY(-50%);
@@ -47,7 +45,9 @@
 }
 
 .page-header__toggle:hover {
-  background: purple;
+
+  background-image: url("../img/icon-menu-close.svg");
+
 }
 
 
@@ -92,6 +92,7 @@
 
   .page-header__list--desktop {
     display: flex;
+    order: 3;
 
     font-size: 15px;
   }

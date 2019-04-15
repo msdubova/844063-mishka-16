@@ -1,6 +1,8 @@
-.bestseller {
-  background-color: rgb(255, 255, 255);
-  border-bottom: 2px red dashed;
+
+.bestseller__container {
+  position: relative;
+
+  padding-bottom: 170px;
 }
 
 .bestseller__tag {
@@ -11,9 +13,6 @@
   text-transform: uppercase;
 }
 
-.bestseller__text {
-  padding: 30px 0;
-}
 
 .bestseller__table {
   width: 100%;
@@ -41,103 +40,63 @@
 }
 
 .bestseller__cart {
-  text-align: center;
-}
-
-.bestseller__price {
-  margin: 25px 0;
-
-  font-weight: 700;
-  font-size: 17px;
-}
-
-.bestseller__order {
-  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .bestseller__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bestseller__title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 55px;
-  }
-
-  .bestseller__tag {
-    display: inline-flex;
-    align-items: center;
-    width: 120px;
-
-    text-align: center;
+    padding-bottom: 0;
   }
 
   .bestseller__info {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    height: 404px;
-  }
-
-  .bestseller__description {
-    width: 44%;
-    margin-bottom: auto;
-
-    font-size: 17px;
-    line-height: 30px;
+    flex-direction: row;
   }
 
   .bestseller__text {
-    margin: 0;
-    padding-top: 0;
-  }
-
-  .bestseller__table {
-    width: 100%;
-  }
-
-  .bestseller__image {
-    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 50%;
-    height: 100%;
-    margin-left: auto;
+    padding-right: 44px;
   }
 
   .bestseller__cart {
-    width: 44%;
+    position: static;
+  }
+
+  .bestseller__image {
+    width: 50%;
+    height: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .bestseller__container {
-    position: relative;
-
-    padding-left: 160px;
-  }
-
   .bestseller__title {
-    position: absolute;
-  }
-
-  .bestseller__info {
-    min-height: 636px;
-  }
-
-  .bestseller__description {
-    margin-bottom: 20px;
-  }
-
-  .bestseller__image {
-    width: 525px;
+    position: relative;
+    top: 100px;
+    left: 175px;
+    width: 500px;
+    word-break: break-all;
   }
 
   .bestseller__tag {
     position: absolute;
+    top: 10px;
+
+    display: inline-block;
+    width: 70px;
+    padding: 0 50px;
+
+    text-align: center;
 
     transform: translateX(-100%);
+  }
+
+  .bestseller__text {
+    justify-content: flex-end;
+    padding-left: 175px;
   }
 }

@@ -31,14 +31,8 @@
     justify-content: flex-end;
   }
 
-  .user-list::after {
-    content: "Бесплатная доставка по России*";
-    position: absolute;
-    top: 110px;
-  }
-
   .user-list__item {
-    border-left: 1px tomato solid;
+    border-left: 1px #cecece solid;
     box-shadow: none;
   }
 
@@ -61,7 +55,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    order: 3;
     width: 43%;
+    order: 2;
   }
 }

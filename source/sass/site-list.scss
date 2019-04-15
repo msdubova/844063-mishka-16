@@ -1,5 +1,6 @@
 .site-list {
   @include reset-ul();
+  z-index: 1;
 }
 
 .site-list__item {
@@ -19,8 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    position: absolute;
-    top: 100%;
+    // position: absolute;
+    // top: 100%;
 
     order: 2;
   }
@@ -47,7 +48,6 @@
 
   .site-list:not(.page-header__list--desktop) {
     position: static;
-
     order: 1;
   }
 
