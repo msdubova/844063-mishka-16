@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 
-.user-list__link img {
+.user-list__link svg {
   position: absolute;
   left: 30px;
 }
@@ -42,7 +42,7 @@
     padding: 31px 0 31px 31px;
   }
 
-  .user-list__link img {
+  .user-list__link svg {
     position: static;
 
     padding-right: 31px;

@@ -1,7 +1,7 @@
 .site-list {
-  @include reset-ul();
-
   z-index: 1;
+
+  @include reset-ul();
 }
 
 .site-list__item {
@@ -23,7 +23,6 @@
   .site-list {
     // position: absolute;
     // top: 100%;
-
     order: 2;
   }
 
@@ -49,12 +48,12 @@
 
   .site-list:not(.page-header__list--desktop) {
     position: static;
+
     order: 1;
   }
 
   .site-list__item {
-    width: 150px;
-    // тут надо пересчитать в процентах
+    width: 160px;
   }
 
   .site-list__link {

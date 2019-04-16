@@ -1,11 +1,27 @@
-
 .bestseller__container {
   position: relative;
+}
 
-  padding-bottom: 170px;
+.bestseller__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 6px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .bestseller__tag {
+  padding-top: 4px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -13,6 +29,9 @@
   text-transform: uppercase;
 }
 
+.bestseller__legend {
+  margin: 25px 0;
+}
 
 .bestseller__table {
   width: 100%;
@@ -26,12 +45,15 @@
 }
 
 .bestseller__field {
+  box-sizing: border-box;
   padding: 8px 0;
 
   border-bottom: 1px solid greenyellow;
 }
 
 .bestseller__value {
+  box-sizing: border-box;
+
   border-bottom: 1px solid greenyellow;
 }
 
@@ -39,66 +61,75 @@
   width: 100%;
 }
 
-.bestseller__cart {
-  position: absolute;
-  bottom: 0;
+.bestseller__price {
+  display: block;
+  padding: 25px 0;
+
+  font-weight: 700;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .bestseller__container {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
-  .bestseller__info {
-    display: flex;
-    flex-direction: row;
+  .bestseller__container::after {
+    height: 15px;
   }
 
-  .bestseller__text {
+  .bestseller__title {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-    width: 50%;
-    padding-right: 44px;
+    align-items: center;
   }
 
-  .bestseller__cart {
-    position: static;
+  .bestseller__tag {
+    width: 70px;
+
+    text-align: center;
+  }
+
+  .bestseller__description {
+    display: inline-block;
+    width: 43%;
   }
 
   .bestseller__image {
+    float: right;
     width: 50%;
-    height: 100%;
+  }
+
+  .bestseller__cart {
+    width: 43%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .bestseller__title {
+  .bestseller__container {
     position: relative;
-    top: 100px;
-    left: 175px;
 
-    width: 500px;
-
-    word-break: break-all;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-left: 225px;
   }
 
   .bestseller__tag {
     position: absolute;
-    top: 10px;
-
-    display: inline-block;
-    width: 70px;
-    padding: 0 50px;
-
-    text-align: center;
-
-    transform: translateX(-100%);
+    left: 85px;
   }
 
-  .bestseller__text {
-    justify-content: flex-end;
-    padding-left: 175px;
+  .bestseller__image {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: -1;
+
+    width: calc(50% - 50px);
+  }
+
+  .bestseller__description,
+  .bestseller__cart {
+    width: 30%;
   }
 }
