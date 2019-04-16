@@ -3,3 +3,16 @@
   margin: 0 auto;
   padding: 22px 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding: 22px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
+}

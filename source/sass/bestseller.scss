@@ -1,14 +1,26 @@
-.bestseller {
-  background-color: rgb(255, 255, 255);
+.bestseller__container {
+  position: relative;
 }
 
-.bestseller__container {
-  box-sizing: border-box;
+.bestseller__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 6px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .bestseller__tag {
-  margin-bottom: 24px;
-  padding-top: 5px;
+  padding-top: 4px;
 
   font-weight: 700;
   font-size: 17px;
@@ -17,46 +29,88 @@
   text-transform: uppercase;
 }
 
-.bestseller__description {
-  margin: 0;
-  padding: 0;
+.bestseller__legend {
+  margin: 25px 0;
 }
 
 .bestseller__table {
   width: 100%;
-  margin-top: 20px;
-}
+  margin-bottom: 28px;
 
-.bestseller__row {
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 7px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 20px;
 
-  border-bottom: 1px solid red;
+  border: none;
 }
 
 .bestseller__field {
-  width: 92px;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 8px 0;
+
+  border-bottom: 1px solid greenyellow;
 }
 
 .bestseller__value {
-  margin: 0;
-  padding: 0;
-}
-
-.bestseller__pic {
-  margin-bottom: 28px;
-}
-
-.bestseller__price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 28px;
-}
-
-.bestseller__order {
   box-sizing: border-box;
+
+  border-bottom: 1px solid greenyellow;
+}
+
+.bestseller__image {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .bestseller__container::after {
+    height: 16px;
+  }
+
+  .bestseller__info {
+    display: flex;
+  }
+
+  .bestseller__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 44px;
+  }
+
+  .bestseller__cart {
+    position: static;
+  }
+
+  .bestseller__image {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bestseller__title {
+    position: relative;
+    top: 100px;
+    left: 175px;
+  }
+
+  .bestseller__tag {
+    position: absolute;
+    top: 10px;
+
+    display: inline-block;
+    width: 75px;
+    padding: 0 50px;
+
+    text-align: center;
+
+    transform: translateX(-100%);
+  }
+
+  .bestseller__text {
+    justify-content: flex-end;
+    padding-left: 175px;
+  }
 }

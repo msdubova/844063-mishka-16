@@ -3,57 +3,56 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  height: 177px;
-  margin: 0;
-  padding: 0;
+  min-height: 177px;
 
   background-color: rgb(241, 241, 241);
 }
 
 .intro--main {
-  justify-content: flex-end;
-  align-items: flex-start;
-  height: 488px;
+  min-height: 488px;
 
-  background-image: url("http://placehold.it/150x100");
+  background-image: url("/img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.intro__container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro__note {
+  display: none;
+  align-self: flex-end;
 }
 
 .intro__title {
   width: 244px;
-  margin: 0;
-  padding: 0;
 
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-}
-
-.intro__title--main {
-  display: inline-flex;
-  align-self: center;
-  margin-bottom: 120px;
-
   text-align: center;
+  color: $black-000;
 }
 
 .intro__list {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include reset-ul();
 }
 
 .intro__item {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 0;
-  padding: 0;
 
   background-color: rgb(99, 209, 187);
 }
@@ -63,8 +62,11 @@
 }
 
 .intro__link {
-  width: 106px;
-  margin: 0;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 30px;
 
   font-weight: 700;
@@ -72,4 +74,94 @@
   line-height: 24px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.intro__link svg {
+  position: absolute;
+  right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    position: relative;
+
+    min-height: 226px;
+  }
+
+  .intro::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    z-index: 5;
+
+    display: block;
+    width: 100%;
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .intro--main {
+    min-height: 745px;
+
+    background-image: url("/img/hero-tablet@1x.jpg");
+  }
+
+  .intro__note {
+    display: block;
+  }
+
+  .intro__title {
+    width: 500px;
+    margin-top: 120px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .intro__list {
+    flex-direction: row;
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  .intro__link {
+    padding: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-height: 255px;
+  }
+
+  .intro::after {
+    height: 34px;
+  }
+
+
+  .intro--main {
+    min-height: 685px;
+
+    background-image: url("/img/hero-desktop@1x.jpg");
+  }
+
+  .intro__title {
+    width: 610px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .intro__list {
+    width: $desktop-width;
+  }
 }

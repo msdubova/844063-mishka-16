@@ -1,3 +1,20 @@
 .slider {
   position: relative;
 }
+
+.slider__toggles {
+  display: flex;
+  height: 50px;
+}
+
+.slider__toggle {
+  width: 50%;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 1px #ececee solid;
+}

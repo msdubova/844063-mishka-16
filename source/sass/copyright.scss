@@ -1,4 +1,13 @@
 .copyright {
-  display: flex;
-  flex-direction: row;
+  margin: 0 auto;
+}
+
+.copyright__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  color: $black-000;
+  text-decoration: none;
 }

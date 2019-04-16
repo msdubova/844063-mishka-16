@@ -1,10 +1,5 @@
 .user-list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include reset-ul();
 }
 
 .user-list__item {
@@ -12,14 +7,55 @@
 }
 
 .user-list__link {
+  position: relative;
+
   display: block;
-  padding-left: 76px;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  padding: 28px 0 27px 76px;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.user-list__link svg {
+  position: absolute;
+  left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    position: relative;
+
+    justify-content: flex-end;
+  }
+
+  .user-list__item {
+    border-left: 1px #cecece solid;
+    box-shadow: none;
+  }
+
+  .user-list__link {
+    display: flex;
+    align-items: center;
+    padding: 31px 0 31px 31px;
+  }
+
+  .user-list__link svg {
+    position: static;
+
+    padding-right: 31px;
+  }
+
+  .user-list__link--search {
+    font-size: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 2;
+    width: 43%;
+  }
 }

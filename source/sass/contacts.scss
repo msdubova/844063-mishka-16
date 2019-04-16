@@ -4,20 +4,88 @@
 
 .contacts__container {
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 22px 30px;
 }
 
-// .contacts__info {
+.contacts__map {
+  width: 100%;
+}
 
-// }
+.contacts__field,
+.contacts__value {
+  display: table-cell;
+}
 
-// .contacts__field {
-//   width: 46px;
-// }
+@media (min-width: $tablet-width) {
+  .contacts {
+    box-sizing: border-box;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 22px 50px;
+  }
 
-// .contacts__value {
+  .contacts__container {
+    margin: 0;
+    padding: 0;
+  }
 
-// }
+  .contacts__table {
+    display: flex;
+  }
 
-// .contacts__map {
+  .contacts__row {
+    width: 300px;
+  }
 
-// }
+  .button-mail {
+    position: relative;
+    left: 50%;
+
+    width: auto;
+
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: $desktop-width;
+    height: 400px;
+  }
+
+  .contacts__container {
+    flex-grow: 1;
+    width: 50%;
+    padding-left: 175px;
+  }
+
+  .contacts__table {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .contacts__map {
+    flex-grow: 1;
+    order: 3;
+    width: 50%;
+  }
+
+  .contacts__map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-mail {
+    left: 175px;
+
+    order: 2;
+    width: 30%;
+
+    transform: none;
+  }
+}
