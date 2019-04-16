@@ -21,8 +21,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    // position: absolute;
-    // top: 100%;
     order: 2;
   }
 
@@ -32,10 +30,12 @@
 
   .site-list__item:not(:last-of-type) {
     margin-right: 37px;
+
+    border-right: 1px #ececec solid;
   }
 
   .site-list__link {
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
 
     font-size: 15px;
   }
@@ -46,6 +46,13 @@
     width: 43%;
   }
 
+  .site-list__item:not(:last-of-type) {
+    margin-right: 37px;
+    padding-right: 37px;
+
+    border-right: 1px #ececec solid;
+  }
+
   .site-list:not(.page-header__list--desktop) {
     position: static;
 
@@ -53,7 +60,6 @@
   }
 
   .site-list__item {
-    width: 160px;
   }
 
   .site-list__link {
