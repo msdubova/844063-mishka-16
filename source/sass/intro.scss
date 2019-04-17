@@ -58,9 +58,20 @@
   background-color: rgb(99, 209, 187);
 }
 
-.intro__item:nth-of-type(2n) {
+.intro__item:last-of-type {
   background-color: rgb(86, 195, 178);
 }
+
+.intro__item:first-of-type:hover,
+.intro__item:first-of-type:focus {
+  background-color: #59d5bc;
+}
+
+.intro__item:last-of-type:hover,
+.intro__item:last-of-type:focus {
+  background-color: #46c1ae;
+}
+
 
 .intro__link {
   position: relative;
