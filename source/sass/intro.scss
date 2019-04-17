@@ -134,6 +134,7 @@
     font-size: 20px;
     line-height: 30px;
   }
+
   .intro__link svg {
     right: 35px;
   }
@@ -142,7 +143,6 @@
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 255px;
-
   }
 
   .intro::after {
@@ -154,6 +154,7 @@
     margin-bottom: 40px;
     background-image: url("/img/hero-desktop@1x.jpg");
     background-position: center;
+    background-size: cover;
   }
 
   .intro__title {
