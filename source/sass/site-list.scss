@@ -14,7 +14,6 @@
 
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -30,12 +29,10 @@
 
   .site-list__item:not(:last-of-type) {
     margin-right: 37px;
-
-    border-right: 1px #ececec solid;
   }
 
   .site-list__link {
-    padding: 20px 0 0 0;
+    padding: 19px 0 0 0;
 
     font-size: 15px;
   }
@@ -46,9 +43,8 @@
     width: 43%;
   }
 
-  .site-list__item:not(:last-of-type) {
-    margin-right: 37px;
-    padding-right: 37px;
+  .site-list:first-of-type .site-list__item:not(:last-of-type) {
+    padding-right: 36px;
 
     border-right: 1px #ececec solid;
   }
@@ -59,8 +55,8 @@
     order: 1;
   }
 
-  .site-list__item {
-  }
+  // .site-list__item {
+  // }
 
   .site-list__link {
     padding: 31px 0;
