@@ -92,6 +92,36 @@
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .nav--opened .site-list:not(.page-header__list--desktop) {
+    display: block;
+  }
+
+  .nav--opened .user-list {
+    display: block;
+  }
+
+  .nav--closed .site-list {
+    display: none;
+  }
+
+  .nav--closed .user-list {
+    display: none;
+  }
+
+  .nav--no-js .site-list:not(.page-header__list--desktop) {
+    display: block;
+  }
+
+  .nav--no-js .user-list {
+    display: block;
+  }
+
+  .nav--no-js .page-header__toggle {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__container {
     display: flex;
