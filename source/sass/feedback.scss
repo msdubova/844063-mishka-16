@@ -26,7 +26,6 @@
 
 .feedback__quote {
   margin: 0;
-  margin-top: 28px;
   padding: 0;
 
   line-height: 30px;
@@ -37,8 +36,11 @@
   margin-top: 34px;
 
   font-style: normal;
-  font-weight: 700;
   color: rgb(0, 0, 0);
+
+  & b {
+    font-weight: 700;
+  }
 }
 
 .feedback__channel {

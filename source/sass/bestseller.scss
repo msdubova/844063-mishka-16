@@ -20,7 +20,8 @@
 }
 
 .bestseller__tag {
-  padding-top: 4px;
+  position: relative;
+  top: -26px;
 
   font-weight: 700;
   font-size: 17px;
@@ -30,7 +31,7 @@
 }
 
 .bestseller__legend {
-  margin: 25px 0;
+  margin-bottom: 0 0 25px 0;
 }
 
 .bestseller__table {
@@ -75,6 +76,7 @@
   padding: 25px 0;
 
   font-weight: 700;
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {

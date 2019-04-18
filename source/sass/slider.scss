@@ -5,6 +5,7 @@
 .slider__toggles {
   display: flex;
   height: 50px;
+  margin: 36px 0;
 }
 
 .slider__toggle {
@@ -15,6 +16,5 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-
   border: 1px #ececee solid;
 }

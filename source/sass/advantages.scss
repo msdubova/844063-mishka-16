@@ -3,16 +3,18 @@
 }
 
 .advantages__list {
-  margin-top: 30px;
-
   @include reset-ul();
 }
 
 .advantages__item {
-  margin-bottom: 30px;
-
+  // max-width: 250px;
   font-weight: 700;
+  font-size: 17px;
   line-height: 20px;
+}
+
+.advantages__item:not(:last-of-type) {
+  margin-bottom: 30px;
 }
 
 .advantages__icon {
@@ -36,11 +38,11 @@
     justify-content: space-between;
     box-sizing: border-box;
     width: 50%;
+    margin-bottom: 55px;
     padding-right: 90px;
 
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 55px;
   }
 }
 
