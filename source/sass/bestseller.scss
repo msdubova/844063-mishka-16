@@ -82,6 +82,8 @@
 @media (min-width: $tablet-width) {
   .bestseller {
     position: relative;
+
+    margin-bottom: 50px;
   }
 
   .bestseller__container {
@@ -116,12 +118,12 @@
   .bestseller__title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 52px;
+    align-items: flex-end;
+    margin-bottom: 20px;
   }
 
   .bestseller__tag {
-    width: 120px;
+    width: 130px;
 
     text-align: center;
   }

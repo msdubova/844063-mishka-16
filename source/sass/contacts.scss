@@ -28,25 +28,70 @@
   display: table-cell;
 }
 
+.contacts__value--mail {
+  border-bottom: #46c1ae 1px solid;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
-    box-sizing: border-box;
     width: $tablet-width;
     margin: 0 auto;
-    padding: 22px 50px;
   }
 
   .contacts__container {
+    position: relative;
+
     margin: 0;
     padding: 0;
   }
 
+  .contacts__container:first-child::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 50px;
+
+    display: block;
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  .contacts .section__title {
+    padding-left: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .contacts__table {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    padding: 10px 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__field {
+    padding-right: 25px;
   }
 
   .contacts__row {
-    width: 300px;
+    width: 50%;
   }
 
   .button-mail {
@@ -54,6 +99,8 @@
     left: 50%;
 
     width: auto;
+    margin: 55px 0;
+    padding: 14px 40px;
 
     transform: translateX(-50%);
   }

@@ -60,9 +60,17 @@
 
 @media (min-width: $tablet-width) {
   .feedback__container {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .feedback__container::after {
@@ -71,16 +79,26 @@
 
   .feedback__title {
     width: 50%;
+    padding-bottom: 0;
   }
 
   .feedback__quote {
     order: 3;
     width: 100%;
+    margin-top: 45px;
+    margin-bottom: 25px;
+
+    font-size: 17px;
   }
 
   .feedback__cite {
     order: 4;
     width: 50%;
+  }
+
+  .feedback__author {
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .feedback__toggles {
@@ -90,7 +108,8 @@
 
   .feedback__apply {
     order: 2;
-    width: 30%;
+    width: auto;
+    padding: 14px 38px;
   }
 }
 

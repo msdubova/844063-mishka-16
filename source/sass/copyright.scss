@@ -28,3 +28,9 @@
 .copyright__link:focus svg {
   fill: #46c1ae;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    text-align: right;
+  }
+}
