@@ -29,3 +29,9 @@
 .social__link:focus svg {
   fill: #46c1ae;
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    justify-content: center;
+  }
+}

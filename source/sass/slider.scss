@@ -39,3 +39,13 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__toggle {
+    width: 20%;
+  }
+
+  .slider__toggles {
+    margin: 0;
+  }
+}
