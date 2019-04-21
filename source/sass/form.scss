@@ -2,10 +2,12 @@
   background-color: rgb(255, 255, 255);
 }
 
-input {
-  display: none;
-}
+.form__description {
+  margin: 0;
+  margin-bottom: 24px;
 
+  font-size: 13px;
+}
 
 .form__fieldset {
   padding: 20px 0;
@@ -14,8 +16,53 @@ input {
   border-top: 1px solid #62d1ba;
 }
 
+.form__fieldset--type {
+  & .form__label.form__label--radio {
+    margin-bottom: 25px;
+  }
+}
+
+.form__fieldset--color {
+  margin-bottom: 15px;
+}
+
+
+.form__fieldset--phone {
+  margin-bottom: 40px;
+  padding: 0;
+
+  & .form__legend {
+    margin-bottom: 0;
+  }
+
+  & .form__list {
+    height: auto;
+
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__fieldset--mail {
+  margin-bottom: 40px;
+  padding: 0;
+
+  & .form__legend {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--more {
+  padding-bottom: 5px;
+
+  & .form__legend {
+    margin-bottom: 0;
+  }
+}
+
 .form__legend {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding-right: 20px;
 
   font-weight: 700;
@@ -24,17 +71,55 @@ input {
   text-transform: uppercase;
 }
 
+input:hover + label::before,
+input:focus + label::before {
+  border: 1px  solid #62d1ba;
+}
+
+input:active + label::before {
+  border: 1px  solid rgba(68, 68, 68, 0.3);
+}
+
 .form__label {
   position: relative;
 
   display: block;
-  width: 155px;
-  margin-bottom: 25px;
   padding-left: 62px;
 
   font-weight: 700;
   line-height: 18px;
   color: $black-000;
+
+  &--text {
+    margin: 0;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 45px;
+  }
+}
+
+.form__text--name:not(:last-of-type) {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.form__text,
+.form__phone,
+.form__mail {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  box-shadow: inset 0 -2px 0 0 black;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
 }
 
 .form__label::before {
@@ -73,12 +158,6 @@ input:checked + .form__label--checkbox::after {
   background-repeat: no-repeat;
 }
 
-.form__text,
-.form__phone,
-.form__mail {
-  display: inline-block;
-}
-
 .form__label--text,
 .form__label--phone,
 .form__label--mail {
@@ -94,47 +173,107 @@ input:checked + .form__label--checkbox::after {
 
 .form__textarea {
   width: 100%;
+  min-height: 142px;
+  padding: 15px;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  border: 2px solid #000000;
+
+  &:hover,
+  &:focus {
+    border: #63d1bb solid 2px;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+
+    opacity: 0.3;
+  }
+}
+
+.form__fn {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(68, 68, 68);
+}
+
+.form__button {
+  margin: 30px 0;
 }
 
 @media (min-width: $tablet-width) {
-  fieldset:nth-of-type(2n) {
-    background-color: rgb(241, 241, 241);
+  fieldset {
+    position: relative;
+  }
+
+  fieldset legend {
+    position: absolute;
+    left: 7%;
+    z-index: 2;
   }
 
   .form__fieldset {
-    position: relative;
+    padding: 50px 0 0 28%;
 
-    display: flex;
-
-    border-top: none;
+    border: none;
   }
 
-  .form__fieldset--type .form__list,
-  .form__fieldset--name .form__list {
-    flex-direction: column;
+  .form__fieldset--color,
+  .form__fieldset--phone,
+  .form__fieldset--mail {
+    background-color: rgb(241, 241, 241);
   }
 
-  .form__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: auto;
+  .form__fieldset--color {
+    margin-bottom: 0;
+
+    & .form__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 72%;
+    }
+
+    & .form__label {
+      width: 50%;
+      margin-bottom: 45px;
+
+      &::before {
+        background-color: transparent;
+      }
+    }
   }
 
-  .form__legend {
-    position: absolute;
-    left: 35px;
+  .form__fieldset--name {
+    & .form__text--name {
+      display: flex;
+      align-items: baseline;
+    }
+
+    & .form__label--text {
+      padding-right: 25px;
+    }
   }
 
-  .form__text--name {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  .form__fieldset--phone {
+    margin-bottom: 0;
+
+    & input {
+      background-color: transparent;
+    }
   }
 
-  .form__textarea {
-    width: 79%;
-    margin-left: auto;
+  .form__fieldset--mail {
+    & input {
+      background-color: transparent;
+    }
+  }
+
+  .form__button {
+    width: auto;
   }
 }
