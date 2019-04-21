@@ -217,16 +217,18 @@
         </div>
       </div>
     </footer>
-    <div class="modal visually-hidden">
+    <div class="modal">
       <h2>Добавить в корзину</h2>
       <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
         <legend>Выберите размер:</legend>
-        <input type="radio" name="size" id ="small" checked>
-        <input type="radio" name="size" id ="medium">
-        <input type="radio" name="size" id ="large">
-        <label for="small">S</label>
-        <label for="medium">M</label>
-        <label for="large">L</label>
+        <div class="modal__form-wrapper">
+          <input type="radio" name="size" id ="small">
+          <label for="small">S</label>
+          <input type="radio" name="size" id ="medium">
+          <label for="medium">M</label>
+          <input type="radio" name="size" id ="large">
+          <label for="large">L</label>
+        </div>
         <button class="button button__modal" type="button">Добавить</button>
       </form>
     </div>

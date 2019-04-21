@@ -14,3 +14,21 @@
   });
 
   // как сделать так, чтоб при переходе с главной в каталог код заново удалял класс nav--no-js
+
+
+var openPopup = document.querySelector(".bestseller__order");
+var popup = document.querySelector(".modal");
+var closeForm  = popup.querySelector(".button__modal");
+
+openPopup.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+
+});
+
+closeForm.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  // popup.classList.remove("modal-error");
+  // как сделать проверку если не выбран ни один размер
+});
