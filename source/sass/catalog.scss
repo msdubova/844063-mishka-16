@@ -64,14 +64,16 @@
   cursor: pointer;
 
   & svg {
-    fill: rgb(0, 0, 0);
     opacity: 0.2;
+
+    fill: rgb(0, 0, 0);
   }
 
   &:hover svg,
   &:focus svg {
-    fill: #63d1bb;
     opacity: 1;
+
+    fill: #63d1bb;
   }
 
   &:active svg {
@@ -188,8 +190,9 @@
     padding: 42px;
 
     &:first-of-type {
-      border-bottom: none;
       padding-bottom: 0;
+
+      border-bottom: none;
     }
 
     &:last-of-type {
@@ -211,13 +214,40 @@
   .catalog__item {
     flex-direction: column;
     width: 30%;
+
+    & > a {
+      width: 100%;
+    }
+
+    & img {
+      width: 316px;
+      min-height: 462px;
+    }
   }
 
   .catalog__info {
-    width: auto;
+    width: 100%;
+    height: 100%;
   }
 
-  .movie {
-    display: flex;
+  .catalog__features {
+    margin-bottom: 15px;
+  }
+
+  .catalog__movie {
+    position: relative;
+  }
+
+  .catalog__movie-wrapper {
+    position: absolute;
+
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .catalog__movie-container {
+    width: 35%;
+    margin-left: auto;
   }
 }
