@@ -148,11 +148,16 @@
     }
   }
 
+  .contacts__container:first-child::before {
+    top: 65px;
+    left: 70px;
+  }
 
   .contacts__table {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    padding-bottom: 75px;
   }
 
   .contacts__row {
