@@ -1,7 +1,7 @@
 .button {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 85px;
+  padding: 14px;
 
   font-weight: 700;
   font-size: 17px;
@@ -12,4 +12,15 @@
   background-color: transparent;
   border: 2px solid rgb(68, 68, 68);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(68, 68, 68);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

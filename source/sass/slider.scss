@@ -5,6 +5,7 @@
 .slider__toggles {
   display: flex;
   height: 50px;
+  margin: 36px 0;
 }
 
 .slider__toggle {
@@ -15,6 +16,36 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-
   border: 1px #ececee solid;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles {
+    justify-content: flex-end;
+  }
+
+  .slider__toggle {
+    width: 26%;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle {
+    width: 20%;
+  }
+
+  .slider__toggles {
+    margin: 0;
+  }
 }

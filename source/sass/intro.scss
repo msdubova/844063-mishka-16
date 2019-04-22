@@ -1,37 +1,44 @@
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 177px;
 
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
 }
 
 .intro--main {
   min-height: 488px;
 
+  background-color: #fafafa;
   background-image: url("/img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-position-y: -30px;
+
+  & .intro__container {
+    justify-content: flex-start;
+  }
 }
 
 .intro__container {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .intro__note {
+  position: relative;
+  top: -4px;
+
   display: none;
   align-self: flex-end;
 }
 
 .intro__title {
-  width: 244px;
+  width: 250px;
 
   font-weight: 700;
   font-size: 27px;
@@ -43,7 +50,7 @@
 .intro__list {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  align-items: flex-end;
   width: 100%;
 
   @include reset-ul();
@@ -57,9 +64,20 @@
   background-color: rgb(99, 209, 187);
 }
 
-.intro__item:nth-of-type(2n) {
+.intro__item:last-of-type {
   background-color: rgb(86, 195, 178);
 }
+
+.intro__item:first-of-type:hover,
+.intro__item:first-of-type:focus {
+  background-color: #59d5bc;
+}
+
+.intro__item:last-of-type:hover,
+.intro__item:last-of-type:focus {
+  background-color: #46c1ae;
+}
+
 
 .intro__link {
   position: relative;
@@ -86,17 +104,17 @@
     position: relative;
 
     min-height: 226px;
+    margin-bottom: 25px;
   }
 
   .intro::after {
     content: "";
     position: absolute;
     right: 0;
-    bottom: -10px;
+    bottom: -12px;
     left: 0;
-    z-index: 5;
+    z-index: 1;
 
-    display: block;
     width: 100%;
     height: 24px;
 
@@ -110,6 +128,7 @@
     min-height: 745px;
 
     background-image: url("/img/hero-tablet@1x.jpg");
+    background-position: center;
   }
 
   .intro__note {
@@ -118,7 +137,7 @@
 
   .intro__title {
     width: 500px;
-    margin-top: 120px;
+    margin-top: 115px;
 
     font-size: 43px;
     line-height: 50px;
@@ -131,10 +150,18 @@
   }
 
   .intro__link {
-    padding: 35px;
+    padding: 28px 40px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      padding-bottom: 78px;
+    }
+  }
+
+  .intro__link svg {
+    right: 30px;
   }
 }
 
@@ -147,15 +174,17 @@
     height: 34px;
   }
 
-
   .intro--main {
-    min-height: 685px;
+    min-height: 750px;
+    margin-bottom: 40px;
 
     background-image: url("/img/hero-desktop@1x.jpg");
+    background-position: center;
   }
 
   .intro__title {
-    width: 610px;
+    width: 620px;
+    margin-top: 110px;
 
     font-size: 53px;
     line-height: 57px;
@@ -163,5 +192,13 @@
 
   .intro__list {
     width: $desktop-width;
+  }
+
+  .intro__link {
+    padding: 32px 38px;
+  }
+
+  .intro__link svg {
+    right: 35px;
   }
 }

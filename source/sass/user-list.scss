@@ -22,11 +22,27 @@
 .user-list__link svg {
   position: absolute;
   left: 30px;
+
+  opacity: 0.2;
 }
+
+.user-list__link:hover svg {
+  opacity: 1;
+
+  fill: #63d1bb;
+}
+
+.user-list__link:active svg {
+  opacity: 0.3;
+
+  fill: #63d1bb;
+}
+
 
 @media (min-width: $tablet-width) {
   .user-list {
     position: relative;
+    // width: 52%;
 
     justify-content: flex-end;
   }
@@ -45,7 +61,7 @@
   .user-list__link svg {
     position: static;
 
-    padding-right: 31px;
+    margin-right: 31px;
   }
 
   .user-list__link--search {
@@ -55,6 +71,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
+    flex-grow: 1;
     order: 2;
     width: 43%;
   }

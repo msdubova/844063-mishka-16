@@ -4,7 +4,7 @@
 
 .social__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   font-size: 0;
@@ -18,4 +18,20 @@
 
 .social__link {
   display: inline-flex;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #46c1ae;
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    justify-content: center;
+  }
 }

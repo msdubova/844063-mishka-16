@@ -26,7 +26,6 @@
 
 .feedback__quote {
   margin: 0;
-  margin-top: 28px;
   padding: 0;
 
   line-height: 30px;
@@ -37,8 +36,11 @@
   margin-top: 34px;
 
   font-style: normal;
-  font-weight: 700;
   color: rgb(0, 0, 0);
+
+  & b {
+    font-weight: 700;
+  }
 }
 
 .feedback__channel {
@@ -57,28 +59,66 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    position: relative;
+  }
+
+  .feedback::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 15px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+  }
+
   .feedback__container {
+    z-index: 2;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .feedback__container::after {
-    height: 15px;
+    display: none;
   }
 
   .feedback__title {
     width: 50%;
+    padding-bottom: 0;
   }
 
   .feedback__quote {
     order: 3;
     width: 100%;
+    margin-top: 45px;
+    margin-bottom: 25px;
+
+    font-size: 17px;
   }
 
   .feedback__cite {
     order: 4;
     width: 50%;
+  }
+
+  .feedback__author {
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .feedback__toggles {
@@ -88,12 +128,28 @@
 
   .feedback__apply {
     order: 2;
-    width: 30%;
+    width: auto;
+    height: 52px;
+    padding: 14px 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    position: static;
+  }
+
+  .feedback::after {
+    display: none;
+  }
+
   .feedback__container {
     padding-left: 225px;
+
+    background-position-x: 50px;
+  }
+
+  .feedback__author {
+    margin: 0;
   }
 }

@@ -8,21 +8,40 @@
 }
 
 .page-footer__social {
+  width: 100%;
+  padding-bottom: 30px;
+
   border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.page-footer__copyright {
+  width: 100%;
+  padding-top: 28px;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+
 @media (min-width: $tablet-width) {
   .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__container > * {
+    width: 30%;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    border: none;
   }
 }

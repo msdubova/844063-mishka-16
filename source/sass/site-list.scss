@@ -14,15 +14,12 @@
 
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    // position: absolute;
-    // top: 100%;
     order: 2;
   }
 
@@ -35,7 +32,7 @@
   }
 
   .site-list__link {
-    padding: 25px 0 0 0;
+    padding: 19px 0 0 0;
 
     font-size: 15px;
   }
@@ -46,15 +43,20 @@
     width: 43%;
   }
 
+  .site-list:first-of-type .site-list__item:not(:last-of-type) {
+    padding-right: 36px;
+
+    border-right: 1px #ececec solid;
+  }
+
   .site-list:not(.page-header__list--desktop) {
     position: static;
 
     order: 1;
   }
 
-  .site-list__item {
-    width: 160px;
-  }
+  // .site-list__item {
+  // }
 
   .site-list__link {
     padding: 31px 0;
