@@ -14,10 +14,15 @@
   background-image: url("/img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-position-y: -30px;
 
   & .intro__container {
     justify-content: flex-start;
+  }
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("/img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
   }
 }
 
@@ -128,7 +133,13 @@
     min-height: 745px;
 
     background-image: url("/img/hero-tablet@1x.jpg");
-    background-position: center;
+
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("/img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .intro__note {
@@ -156,7 +167,7 @@
     line-height: 30px;
 
     &:hover {
-      padding-bottom: 78px;
+      padding-bottom: 33px;
     }
   }
 
@@ -177,9 +188,15 @@
   .intro--main {
     min-height: 750px;
     margin-bottom: 40px;
-
+    // background-size: cover;
+    // нужен тут ковер,чтоб фон тянулся?
     background-image: url("/img/hero-desktop@1x.jpg");
-    background-position: center;
+
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("/img/hero-desktop@2x.jpg");
+    }
   }
 
   .intro__title {
@@ -196,6 +213,10 @@
 
   .intro__link {
     padding: 32px 38px;
+
+    &:hover {
+      padding-bottom: 37px;
+    }
   }
 
   .intro__link svg {
