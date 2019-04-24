@@ -30,6 +30,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -137,6 +138,10 @@
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px auto;
     }
+  }
+
+  .intro__container {
+    justify-content: flex-start;
   }
 
   .intro__note {
