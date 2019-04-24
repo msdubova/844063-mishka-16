@@ -60,6 +60,11 @@
 
 .bestseller__image {
   width: 100%;
+
+  & img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .bestseller__cart {
@@ -192,8 +197,9 @@
   }
 
   .bestseller__info {
-    justify-content: space-between;
     position: relative;
+
+    justify-content: space-between;
   }
 
   .bestseller__info::after {
