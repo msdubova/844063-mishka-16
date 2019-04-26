@@ -91,7 +91,7 @@
   .bestseller {
     position: relative;
 
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   .bestseller::after {
@@ -122,8 +122,8 @@
   .bestseller__title {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 45px;
   }
 
   .bestseller__tag {
@@ -146,6 +146,8 @@
 
   .bestseller__legend {
     margin: 0;
+    top: -5px;
+    position: relative;
 
     font-size: 17px;
     line-height: 30px;
@@ -153,7 +155,11 @@
 
   .bestseller__table {
     margin: 0;
-    margin-top: 46px;
+    margin-top: 35px;
+  }
+
+  .bestseller__field {
+    padding-right: 0;
   }
 
   .bestseller__cart {
@@ -163,6 +169,7 @@
   }
 
   .bestseller__price {
+    padding: 35px 0;
     font-size: 20px;
   }
 

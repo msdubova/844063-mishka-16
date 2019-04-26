@@ -32,7 +32,11 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 5px;
+    margin-bottom: 0;
+
+    & h2 {
+      padding-bottom: 33px;
+    }
   }
 
   .advantages__list {
