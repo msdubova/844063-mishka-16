@@ -8,7 +8,7 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
 
   height: 6px;
@@ -19,9 +19,12 @@
   background-size: contain;
 }
 
+.bestseller__title h2 {
+  padding-bottom: 10px;
+}
+
 .bestseller__tag {
   position: relative;
-  top: -26px;
 
   font-weight: 700;
   font-size: 17px;
@@ -31,7 +34,7 @@
 }
 
 .bestseller__legend {
-  margin-bottom: 0 0 25px 0;
+  margin: 15px 0 20px 0;
 }
 
 .bestseller__table {
@@ -47,7 +50,7 @@
 
 .bestseller__field {
   box-sizing: border-box;
-  padding: 8px 0;
+  padding: 10px 10px 10px 0;
 
   border-bottom: 1px solid #ececec;
 }

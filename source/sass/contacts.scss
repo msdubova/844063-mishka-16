@@ -9,7 +9,7 @@
 }
 
 .contacts .section__title {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 
   font-size: 18px;
 }
@@ -32,6 +32,10 @@
   }
 }
 
+.contacts__row:first-child {
+  margin-bottom: 30px;
+}
+
 .contacts__field {
   padding-right: 30px;
 }
@@ -39,11 +43,14 @@
 .contacts__field,
 .contacts__value {
   display: table-cell;
+
+  line-height: 30px;
 }
 
 .contacts__value--mail {
   border-bottom: #46c1ae 1px solid;
   cursor: pointer;
+
 
   &:hover,
   &:focus {

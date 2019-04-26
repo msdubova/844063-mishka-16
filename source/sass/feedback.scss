@@ -4,6 +4,7 @@
 
 .feedback__container {
   position: relative;
+  padding-bottom: 50px;
 }
 
 .feedback__container::after {
@@ -33,8 +34,9 @@
 
 .feedback__author {
   display: block;
-  margin-top: 34px;
-
+  margin-top: 25px;
+  font-size: 17px;
+  line-height: 30px;
   font-style: normal;
   color: rgb(0, 0, 0);
 
