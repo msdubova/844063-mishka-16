@@ -10,6 +10,7 @@
 }
 
 .form__fieldset {
+  margin: 0;
   padding: 20px 0;
 
   border: none;
@@ -29,6 +30,10 @@ input::placeholder {
 .form__fieldset--type {
   & .form__label.form__label--radio {
     margin-bottom: 25px;
+  }
+
+  & input:checked + label::before {
+    background-color: #62d1ba;
   }
 }
 
@@ -198,9 +203,6 @@ input:focus {
   border-radius: 50%;
 }
 
-input:checked + .form__label--radio::before {
-  background-color: #62d1ba;
-}
 
 input:checked + .form__label--checkbox::after {
   content: "";
