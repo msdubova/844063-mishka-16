@@ -9,14 +9,14 @@
 
 .page-footer__social {
   width: 100%;
-  padding-bottom: 30px;
+  padding: 5px 0 25px 0;
 
   border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .page-footer__copyright {
   width: 100%;
-  padding-top: 28px;
+  padding: 20px 0 8px 0;
 }
 
 .page-footer__logo {
@@ -34,6 +34,14 @@
 
   .page-footer__logo {
     display: block;
+
+    &:hover svg {
+      fill: rgb(70, 193, 174);
+    }
+
+    &:focus svg {
+      fill: rgba(70, 193, 174, 0.3);
+    }
   }
 
   .page-footer__container > * {

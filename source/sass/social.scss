@@ -4,7 +4,7 @@
 
 .social__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   font-size: 0;
@@ -14,6 +14,7 @@
 
 .social__item {
   margin: 0 20px;
+  display: inherit;
 }
 
 .social__link {

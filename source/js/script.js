@@ -13,7 +13,6 @@
     }
   });
 
-  // как сделать так, чтоб при переходе с главной в каталог код заново удалял класс nav--no-js
 
 
 var openPopup = document.querySelector(".bestseller__order");

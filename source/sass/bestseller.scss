@@ -8,7 +8,7 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
 
   height: 6px;
@@ -19,9 +19,12 @@
   background-size: contain;
 }
 
+.bestseller__title h2 {
+  padding-bottom: 10px;
+}
+
 .bestseller__tag {
   position: relative;
-  top: -26px;
 
   font-weight: 700;
   font-size: 17px;
@@ -31,7 +34,7 @@
 }
 
 .bestseller__legend {
-  margin-bottom: 0 0 25px 0;
+  margin: 15px 0 20px 0;
 }
 
 .bestseller__table {
@@ -47,7 +50,7 @@
 
 .bestseller__field {
   box-sizing: border-box;
-  padding: 8px 0;
+  padding: 10px 10px 10px 0;
 
   border-bottom: 1px solid #ececec;
 }
@@ -88,7 +91,7 @@
   .bestseller {
     position: relative;
 
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   .bestseller::after {
@@ -119,8 +122,8 @@
   .bestseller__title {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 45px;
   }
 
   .bestseller__tag {
@@ -143,6 +146,8 @@
 
   .bestseller__legend {
     margin: 0;
+    top: -5px;
+    position: relative;
 
     font-size: 17px;
     line-height: 30px;
@@ -150,7 +155,11 @@
 
   .bestseller__table {
     margin: 0;
-    margin-top: 46px;
+    margin-top: 35px;
+  }
+
+  .bestseller__field {
+    padding-right: 0;
   }
 
   .bestseller__cart {
@@ -160,6 +169,7 @@
   }
 
   .bestseller__price {
+    padding: 35px 0;
     font-size: 20px;
   }
 
@@ -172,6 +182,7 @@
 @media (min-width: $desktop-width) {
   .bestseller {
     position: static;
+    margin-bottom: 50px;
   }
 
   .bestseller::after {
@@ -185,7 +196,7 @@
 
   .bestseller__title {
     position: relative;
-    top: 160px;
+    top: 165px;
     z-index: 2;
 
     flex-direction: row-reverse;
@@ -216,6 +227,10 @@
     background-position: bottom;
   }
 
+  .bestseller__legend {
+    top: 0;
+  }
+
   .bestseller__text {
     justify-content: flex-end;
     padding-right: 58px;
@@ -223,12 +238,8 @@
   }
 
   .bestseller__table {
-    margin-top: 50px;
-    margin-bottom: 80px;
-  }
-
-  .bestseller__field {
-    padding: 9px 0;
+    margin-top: 45px;
+    margin-bottom: 75px;
   }
 
   .bestseller__cart {
