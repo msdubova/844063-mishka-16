@@ -74,7 +74,7 @@
 
   &:disabled + label {
     opacity: 0.3;
-    cursor: not-allowed;
+    pointer-events: none;
 
     &::before {
       cursor: not-allowed;
