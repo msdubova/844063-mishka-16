@@ -34,6 +34,14 @@
 
   .page-footer__logo {
     display: block;
+
+    &:hover svg {
+      fill: rgb(70, 193, 174);
+    }
+
+    &:focus svg {
+      fill: rgba(70, 193, 174, 0.3);
+    }
   }
 
   .page-footer__container > * {
