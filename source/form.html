@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин милых вещиц для дома ручной работы Mishka</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <svg display="none">
       <symbol id="search" viewBox="-1 -1 18 18">
         <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
@@ -157,8 +160,8 @@
               <div class="form__list">
                 <input class="visually-hidden" type="radio" name="type" id="interior" checked>
                 <label class="form__label form__label--radio" for="interior">Аксессуар для интерьера</label>
-                <input class="visually-hidden" type="radio" name="type" id="toys">
-                <label class="form__label form__label--radio" for="toys">Детская игрушка</label>
+                <input class="visually-hidden" type="radio" name="type" id="toys-form">
+                <label class="form__label form__label--radio" for="toys-form">Детская игрушка</label>
               </div>
             </fieldset>
           </div>
