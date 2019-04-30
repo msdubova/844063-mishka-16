@@ -67,15 +67,14 @@ gulp.task("html", function(){
 gulp.task("server", function () {
     server.init({
       server: "build/",
-      // notify: false,
-      // open: true,
-      // cors: true,
-      // ui: false
+      notify: false,
+      open: true,
+      cors: true,
+      ui: false
     });
 
     gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("build"));
     gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-    // gulp.watch("source/*.html").on("change", server.reload);
     gulp.watch("source/*.html", gulp.series("html", "refresh"));
   });
 
