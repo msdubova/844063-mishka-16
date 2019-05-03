@@ -90,6 +90,10 @@
   }
 }
 
+.page-header__list {
+  flex-wrap: wrap;
+}
+
 .page-header__list--desktop {
   display: none;
 }

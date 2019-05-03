@@ -18,6 +18,7 @@
 
   & .intro__container {
     justify-content: flex-start;
+    // margin-bottom: auto;
   }
 
   & .intro__title {
@@ -45,6 +46,7 @@
 
   display: none;
   align-self: flex-end;
+  max-width: 40%;
 }
 
 .intro__title {
