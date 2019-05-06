@@ -14,10 +14,18 @@
   });
 
 
+// var openPopup = document.querySelectorAll(".js-button-modal");
 var openPopup = document.querySelector(".js-button-modal");
 var popup = document.querySelector(".modal-overlay");
 var formField = popup.querySelector("[name=size]");
 var popupOverlay = document.querySelector(".modal-overlay");
+
+
+// for (var i = 0; i < openPopup.length; i++) {
+//   if (!openPopup[i].contains(".modal-show")){
+//     openPopup[i].classList.add(".modal-show");
+//   }
+// }
 
 openPopup.addEventListener("click", function(evt) {
   evt.preventDefault();
