@@ -14,7 +14,7 @@
   });
 
 
-var openPopup = document.querySelector(".modal__button--open");
+var openPopup = document.querySelector(".js-button-modal");
 var popup = document.querySelector(".modal-overlay");
 var formField = popup.querySelector("[name=size]");
 var popupOverlay = document.querySelector(".modal-overlay");

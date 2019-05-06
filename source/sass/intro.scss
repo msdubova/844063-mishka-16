@@ -138,7 +138,6 @@
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: contain;
-    // как сделать чтоб зигзаг не растягивался?
   }
 
   .intro--main {
@@ -206,8 +205,6 @@
   .intro--main {
     min-height: 750px;
     margin-bottom: 30px;
-    // background-size: cover;
-    // нужен тут ковер,чтоб фон тянулся?
 
     background-image: url("../img/hero-desktop@1x.jpg");
 
