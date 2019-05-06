@@ -42,7 +42,6 @@
   position: absolute;
   top: 35px;
   right: 10%;
-  // как сделать чтоб не выпадал из потока но и не был в разметке хедера
   z-index: 1;
 
   width: 20px;
@@ -90,6 +89,10 @@
   }
 }
 
+.page-header__list {
+  flex-wrap: wrap;
+}
+
 .page-header__list--desktop {
   display: none;
 }
@@ -129,7 +132,6 @@
     display: flex;
     flex-wrap: wrap;
     width: $tablet-width;
-    // width: 87%;
     padding: 0 50px;
   }
 
@@ -150,8 +152,6 @@
 
   .page-header__list:not(.page-header__list--desktop) {
     display: flex;
-    // flex-grow: 1;
-    // есть вопросы к этому гроу
   }
 }
 

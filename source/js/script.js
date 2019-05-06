@@ -14,20 +14,29 @@
   });
 
 
-
-var openPopup = document.querySelector(".bestseller__order");
-var popup = document.querySelector(".modal");
-var closeForm  = popup.querySelector(".button__modal");
+var openPopup = document.querySelector(".js-button-modal");
+var popup = document.querySelector(".modal-overlay");
+var formField = popup.querySelector("[name=size]");
+var popupOverlay = document.querySelector(".modal-overlay");
 
 openPopup.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-
+  formField.focus();
 });
 
-closeForm.addEventListener("click", function(evt){
+window.addEventListener("keydown", function(evt){
+  if(evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+    }
+  }
+});
+
+popupOverlay.addEventListener("click", function(evt){
   evt.preventDefault();
-  popup.classList.remove("modal-show");
-  // popup.classList.remove("modal-error");
-  // как сделать проверку если не выбран ни один размер
+  if (popup.classList.contains("modal-show")) {
+    popup.classList.remove("modal-show");
+}
 });
