@@ -16,7 +16,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px #ececee solid;
+  border: 1px rgb(236, 236, 238) solid;
 
   &:hover,
   &:focus {
@@ -26,7 +26,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  &--backward {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--forward {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .slider__toggles {

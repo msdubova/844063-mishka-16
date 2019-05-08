@@ -1,15 +1,15 @@
   var identificator  = document.querySelector(".page-header__container");
   var navToggle = document.querySelector(".page-header__toggle");
 
-  identificator.classList.remove("nav--no-js");
+  identificator.classList.remove("page-header__container--no-js");
 
   navToggle.addEventListener("click", function() {
-    if (identificator.classList.contains("nav--closed")) {
-      identificator.classList.remove("nav--closed");
-      identificator.classList.add("nav--opened");
+    if (identificator.classList.contains("page-header__container--closed")) {
+      identificator.classList.remove("page-header__container--closed");
+      identificator.classList.add("page-header__container--opened");
     } else {
-      identificator.classList.add("nav--closed");
-      identificator.classList.remove("nav--opened");
+      identificator.classList.add("page-header__container--closed");
+      identificator.classList.remove("page-header__container--opened");
     }
   });
 

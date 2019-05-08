@@ -52,13 +52,6 @@
   line-height: 30px;
 }
 
-.button__backward {
-  background-image: url("../img/icon-left-arrow.svg");
-}
-
-.button__forward {
-  background-image: url("../img/icon-right-arrow.svg");
-}
 
 @media (min-width: $tablet-width) {
   .feedback {

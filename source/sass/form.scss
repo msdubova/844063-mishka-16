@@ -4,15 +4,12 @@
   background-color: rgb(255, 255, 255);
 
   & .container {
-    padding-bottom: 0;
+    padding-bottom: 6px;
   }
 }
 
-.form__title {
-  display: none;
-}
-
 .form__description {
+  width: 93%;
   margin: 0;
   margin-bottom: 22px;
 
@@ -21,10 +18,9 @@
 
 .form__fieldset {
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
 
   border: none;
-  border-top: 1px solid rgb(98, 209, 186);
 
   & input {
     font-size: 17px;
@@ -41,14 +37,29 @@
 }
 
 .form__legend {
-  margin-bottom: 15px;
-  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
 
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  color: rgb(99, 209, 187);
-  text-transform: uppercase;
+  & h3 {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: rgb(99, 209, 187);
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content: "";
+
+    width: 77%;
+    height: 1px;
+
+    background-color: rgb(99, 209, 187);
+  }
 }
 
 .form__list input {
@@ -82,6 +93,7 @@
 
   &:disabled + label {
     opacity: 0.3;
+
     pointer-events: none;
 
     &::before {
@@ -91,37 +103,29 @@
 }
 
 .form__label {
-  position: relative;
-
-  display: block;
-  padding-left: 62px;
+  display: flex;
+  align-items: center;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $black-000;
 
-  &--text {
-    margin: 0;
-  }
-
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
 
+    flex-shrink: 0;
     width: 40px;
     height: 40px;
+    margin-right: 23px;
 
     background-color: #ffffff;
     border: 2px rgb(68, 68, 68) solid;
-    box-shadow: 0 0 0 12px #ffffff inset,;
-    transform: translateY(-50%);
+    box-shadow: 0 0 0 10px #ffffff inset;
   }
 }
 
@@ -137,35 +141,28 @@
 
 .form__fieldset--color {
   & .form__label:not(:last-of-type) {
-    margin-bottom: 43px;
+    margin-bottom: 21px;
   }
 
-  & input:checked + label::after {
-    content: "";
-    position: absolute;
-    left: 1%;
-
-    width: 35px;
-    height: 23px;
-
+  & input:checked + label::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none;
   }
 }
 
 .form__fieldset--name {
-  padding-bottom: 5px;
-
-  & .form__list {
-    margin-top: -5px;
+  & .form__legend {
+    padding-bottom: 30px;
   }
 
-  & .form__text--name:not(:last-of-type) {
+  & .form__list-row:not(:last-of-type) {
     margin-top: 0;
     margin-bottom: 22px;
   }
 
-  & .form__text--name:last-of-type {
+  & .form__list-row:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -174,21 +171,19 @@
   position: relative;
 
   margin-bottom: 35px;
-  padding: 0;
-  padding-top: 6px;
 
   font-size: 19px;
   line-height: 15px;
   color: rgba(68, 68, 68, 0.3);
 
   & .form__legend {
-    margin-bottom: 0;
+    padding-bottom: 10px;
   }
 
   & svg {
     position: absolute;
     top: 50%;
-    right: 3%;
+    right: 4%;
 
     fill: rgba(0, 0, 0, 0.2);
   }
@@ -202,22 +197,18 @@
 .form__fieldset--mail {
   position: relative;
 
-  margin-bottom: 10px;
-  padding: 0;
-  padding-top: 5px;
-
   font-size: 19px;
   line-height: 15px;
   color: rgba(68, 68, 68, 0.3);
 
   & .form__legend {
-    margin-bottom: 0;
+    padding-bottom: 5px;
   }
 
   & svg {
     position: absolute;
-    top: 50%;
-    right: 2%;
+    top: 40%;
+    right: 4%;
 
     fill: rgba(0, 0, 0, 0.2);
   }
@@ -229,11 +220,7 @@
 }
 
 .form__fieldset--more {
-  padding-bottom: 5px;
-
-  & .form__legend {
-    margin-bottom: 5px;
-  }
+  margin-bottom: 5px;
 
   & .form__textarea {
     width: 100%;
@@ -244,6 +231,8 @@
     line-height: 24px;
 
     border: 2px solid #000000;
+
+    resize: vertical;
 
     &:hover,
     &:focus {
@@ -299,111 +288,110 @@
 }
 
 .form__button {
-  margin: 30px 0;
+  margin: 30px 0 22px 0;
 }
 
 @media (min-width: $tablet-width) {
-  .form__section {
-    margin-bottom: 0;
-  }
-
   .form {
-    margin-top: 50px;
+    margin-top: 55px;
+
+    & .container {
+      padding-top: 16px;
+    }
 
     & .form__label {
-      margin-bottom: 58px;
+      margin-bottom: 22px;
 
       font-size: 19px;
 
       &::before {
-        left: -4%;
-
         width: 53px;
         height: 53px;
+        margin-right: 25px;
 
         border: 2px rgb(68, 68, 68) solid;
-        box-shadow: 0 0 0 15px #ffffff inset,;
+        box-shadow: 0 0 0 13px #ffffff inset,;
       }
     }
   }
 
   .form__container {
     background-color: rgb(241, 241, 241);
+
+    & .container {
+      padding: 50px 50px 30px 50px;
+    }
   }
 
   .form__description {
+    margin-bottom: 58px;
+
     font-size: 17px;
     line-height: 30px;
   }
 
   .form__fieldset {
-    position: relative;
-
-    padding: 50px 0 0 28%;
-
-    border: none;
+    display: flex;
+    flex-direction: row;
 
     & input {
       font-size: 19px;
+
+      &::placeholder {
+        font-size: 19px;
+      }
     }
   }
 
   .form__legend {
-    position: absolute;
-    left: 0;
-    z-index: 2;
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 0;
 
     font-size: 17px;
     line-height: 16px;
-  }
 
-  .form__list input {
-    font-size: 19px;
-
-    &::placeholder {
-      font-size: 19px;
+    &::after {
+      display: none;
     }
   }
 
   .form__fieldset--type {
-    padding-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .form__fieldset--color {
-    padding-bottom: 10px;
-
     & .form__list {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
     }
 
-    & .form__label {
-      &.form__label--checkbox {
-        width: 54%;
-        margin-bottom: 57px;
+    & .form__label--checkbox {
+      width: 53%;
 
-        &:nth-of-type(2n) {
-          width: 35%;
-        }
+      &:nth-of-type(2n) {
+        width: 37%;
       }
 
       &::before {
-        left: -8.5%;
-
         background-color: transparent;
         box-shadow: 0 0 0 15px transparent inset;
       }
     }
-
-    & input:checked + label::after {
-      left: -4%;
-    }
   }
 
   .form__fieldset--name {
-    padding: 45px 0 0 25%;
+    padding: 50px 0 0 0;
+
+    & .form__legend {
+      padding-top: 0;
+    }
 
     & .form__list {
+      flex-grow: 1;
       margin-top: -15px;
     }
 
@@ -411,33 +399,28 @@
       padding-left: 15px;
     }
 
-    & .form__text--name {
+    & .form__list-row {
       display: flex;
       align-items: baseline;
     }
 
-    & .form__text--name:not(:last-of-type) {
+    & .form__list-row:not(:last-of-type) {
       margin: 0;
     }
 
-    & .form__text--name:last-of-type {
+    & .form__list-row:last-of-type {
       margin-top: 0;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     & .form__label--text {
-      margin-bottom: 38px;
+      margin-bottom: 40px;
       padding-right: 25px;
     }
   }
 
   .form__fieldset--phone {
-    margin-bottom: 0;
-    padding: 30px 0 0 25%;
-
-    & .form__legend {
-      bottom: 15px;
-    }
+    margin-bottom: 25px;
 
     & input {
       padding-left: 15px;
@@ -446,17 +429,12 @@
     }
 
     & svg {
-      right: 4%;
+      transform: translateY(-60%);
     }
   }
 
   .form__fieldset--mail {
-    margin-bottom: 0;
-    padding: 25px 0 30px 25%;
-
-    & .form__legend {
-      top: 40px;
-    }
+    margin-bottom: 20px;
 
     & input {
       padding-left: 15px;
@@ -465,18 +443,14 @@
     }
 
     & svg {
-      top: 35px;
       right: 3%;
+
+      transform: translateY(-30%);
     }
   }
 
   .form__fieldset--more {
-    margin-bottom: 15px;
-    padding-left: 25%;
-
-    & .form__legend {
-      top: 66px;
-    }
+    padding: 30px 0 20px 0;
 
     & .form__textarea {
       font-size: 19px;
@@ -508,103 +482,101 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-top: 100px;
+    margin-top: 98px;
     margin-bottom: 20px;
+
+    & .container {
+      padding: 22px 114px;
+    }
   }
 
   .form__description {
-    padding: 0 17%;
+    padding: 0 30px 0 110px;
   }
 
   .form__legend {
-    left: 6%;
-  }
-
-
-  .form__fieldset {
-    padding: 50px 16.5% 0 19%;
-
-    border: none;
-  }
-
-  .form__label {
-    padding-left: 58px;
+    width: 12%;
+    padding-top: 18px;
   }
 
   .form__fieldset--type {
-    padding-bottom: 12px;
+    margin-bottom: 0;
   }
 
   .form__fieldset--color {
-    padding: 45px 5% 1% 19%;
+    padding-top: 30px;
+    padding-bottom: 10px;
 
-    & .form__label {
-      &.form__label--checkbox {
-        width: 33%;
-        margin-bottom: 57px;
+    & .form__label--checkbox {
+      width: 32.5%;
 
-        &:nth-of-type(2n) {
-          width: 33%;
-        }
+      &:nth-of-type(2n) {
+        width: 32.5%;
       }
     }
   }
 
   .form__fieldset--name {
-    padding: 45px 16.5% 0 17%;
+    margin-bottom: 10px;
+    padding-top: 45px;
 
-    & .form__label {
-      padding-left: 0;
+    & .form__list {
+      padding-right: 114px;
+    }
+
+    & .form__list-row:last-of-type {
+      margin-bottom: 0;
     }
   }
 
   .form__fieldset--phone {
-    padding: 28px 16.5% 0 17%;
-
-    & .form__legend {
-      bottom: 15px;
-    }
+    padding-top: 25px;
 
     & input {
+      margin-right: 114px;
       padding-left: 15px;
 
       background-color: transparent;
     }
 
     & svg {
-      right: 17%;
+      top: 65%;
+      right: 120px;
     }
   }
 
 
   .form__fieldset--mail {
-    padding: 28px 16.5% 50px 17%;
-
-    & .form__legend {
-      top: 40px;
-    }
+    margin-bottom: 30px;
 
     & input {
+      margin-right: 114px;
       padding-left: 15px;
 
       background-color: transparent;
     }
 
     & svg {
-      right: 17%;
+      top: 45%;
+      right: 117px;
     }
   }
 
   .form__fieldset--more {
-    margin-bottom: 10px;
-    padding: 28px 16.5% 0 17%;
+    padding-top: 25px;
+    padding-right: 114px;
 
     & .form__legend {
-      top: 40px;
+      width: 14%;
     }
   }
 
   .container__apply {
-    padding: 0 17%;
+    padding: 0 114px 0 12%;
+  }
+
+  .form__button {
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
 }

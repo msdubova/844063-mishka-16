@@ -14,16 +14,14 @@
         <include src="build/img/sprite.svg"></include>
       </div>
       <header class="page-header">
-        <div class="page-header__container nav--closed nav--no-js">
-          <div class="page-header__container--logo">
-            <a class="page-header__logo" aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
-              <picture class="page-header__logo-image">
-                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 786px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" alt="Логотип Интернет-магазина Мишка">
-              </picture>
-            </a>
-          </div>
+        <div class="page-header__container page-header__container--closed page-header__container--no-js">
+          <a class="page-header__logo" aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+            <picture class="page-header__logo-image">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 786px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип Интернет-магазина Мишка">
+            </picture>
+          </a>
           <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
           <ul class="page-header__list site-list">
             <li class="site-list__item">
@@ -194,8 +192,8 @@
               </cite>
             </div>
             <p class="feedback__toggles slider__toggles">
-              <button class="slider__toggle button__backward" type="button" aria-label="Предыдущий отзыв"></button>
-              <button class="slider__toggle button__forward" type="button" aria-label="Следующий отзыв"></button>
+              <button class="slider__toggle slider__toggle--backward" type="button" aria-label="Предыдущий отзыв"></button>
+              <button class="slider__toggle slider__toggle--forward" type="button" aria-label="Следующий отзыв"></button>
             </p>
             <button class="button feedback__apply" type="button" aria-label="Оставить свой положительный отзыв">Написать</button>
           </div>
@@ -218,7 +216,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037875945433!2d30.320858716527443!3d59.93871647621458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554210739063!5m2!1sru!2sru" style="border: 0;" allowfullscreen></iframe>
           </div>
           <div class="contacts__container">
-            <button class="button button-mail" type="button" aria-label="Написать письмо">Напишите нам</button>
+            <button class="button contacts__button" type="button" aria-label="Написать письмо">Напишите нам</button>
           </div>
         </section>
       </main>
