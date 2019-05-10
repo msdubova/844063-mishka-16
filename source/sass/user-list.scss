@@ -26,7 +26,8 @@
   opacity: 0.2;
 }
 
-.user-list__link:hover svg {
+.user-list__link:hover svg,
+.user-list__link:focus svg {
   opacity: 1;
 
   fill: #63d1bb;

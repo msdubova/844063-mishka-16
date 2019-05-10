@@ -33,7 +33,7 @@
         </ul>
         <ul class="page-header__list user-list">
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="" aria-label="Поиск по сайту">
+            <a class="user-list__link user-list__link--search" href="search-page.html" aria-label="Поиск по сайту">
               <svg class="site-list__svg" width="18" height="18" focusable="false">
                 <use xlink:href="#icon-search"></use>
               </svg>
@@ -41,7 +41,7 @@
             </a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link" href="" aria-label="Посмотреть корзину">
+            <a class="user-list__link" href="cart-page.html" aria-label="Посмотреть корзину">
               <svg class="site-list__svg" width="21" height="20" aria-hidden="true" role="presentation" focusable="false">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -51,10 +51,10 @@
         </ul>
         <ul class="page-header__list page-header__list--desktop site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="">Новые поступления</a>
+            <a class="site-list__link" href="new-page.html">Новые поступления</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="">Распродажа</a>
+            <a class="site-list__link" href="sale-page.html">Распродажа</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
       <section class="section catalog container">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="product1.html">
+            <a href="product1-page.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.webp 1x, ./img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.webp 1x, ./img/photo-hare-tablet@2x.webp 2x">
@@ -81,23 +81,23 @@
             </a>
             <div class="catalog__info">
               <div class="catalog__features">
-                <a href="product1.html">
+                <a href="product1-page.html">
                   <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
                 </a>
                 <span class="catalog__size">Рост 30 см, вес 200 г</span>
               </div>
               <p class="catalog__shop">
                 <span class="catalog__price">1 200 руб.</span>
-                <button class="catalog__button js-button-modal" type="button" aria-label="Добавить в корзину">
+                <a class="catalog__button js-button-modal" href="addtocart.html" aria-label="Добавить в корзину">
                   <svg width="20.294" height="18.849">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </p>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="product1.html">
+            <a href="product1-page.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.webp 1x, ./img/photo-bowl-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.webp 1x, ./img/photo-bowl-tablet@2x.webp 2x">
@@ -109,23 +109,23 @@
             </a>
             <div class="catalog__info">
               <div class="catalog__features">
-                <a href="product1.html">
+                <a href="product1-page.html">
                   <h2 class="catalog__title">Корзинка для белья</h2>
                 </a>
                 <span class="catalog__size">Диаметр 15 см, высота 10 см</span>
               </div>
               <p class="catalog__shop">
                 <span class="catalog__price">690 руб.</span>
-                <button class="catalog__button js-button-modal" type="button" aria-label="Добавить в корзину">
+                <a class="catalog__button js-button-modal" href="addtocart.html" aria-label="Добавить в корзину">
                   <svg width="20.294" height="18.849">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </p>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="product1.html">
+            <a href="product1-page.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.webp 1x, ./img/photo-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.webp 1x, ./img/photo-toys-tablet@2x.webp 2x">
@@ -137,18 +137,18 @@
             </a>
             <div class="catalog__info">
               <div class="catalog__features">
-                <a href="product1.html">
+                <a href="product1-page.html">
                   <h2 class="catalog__title">Большая корзинка для игрушек</h2>
                 </a>
                 <span class="catalog__size">Диаметр 30 см, высота 30 см</span>
               </div>
               <p class="catalog__shop">
                 <span class="catalog__price">1 500 руб.</span>
-                <button class="catalog__button js-button-modal" type="button" aria-label="Добавить в корзину">
+                <a class="catalog__button js-button-modal" href="addtocart.html" aria-label="Добавить в корзину">
                   <svg width="20.294" height="18.849">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </p>
             </div>
           </li>
@@ -180,29 +180,29 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <a class="page-footer__logo" href="">
-          <svg  width="102" height="35" aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+        <a class="page-footer__logo" href="index.html" aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+          <svg  width="102" height="35">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="" aria-label=" Мы в Instagram">
+              <a class="social__link social__link--instagram" href="insta-#" aria-label=" Мы в Instagram">
                 <svg  width="21.769" height="21.334">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="" aria-label="Мы в Facebook">
+              <a class="social__link social__link--facebook" href="facebook-#" aria-label="Мы в Facebook">
                 <svg width="14.962" height="27.718">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="" aria-label="Мы в Twitter">
+              <a class="social__link social__link--twitter" href="twitter-#" aria-label="Мы в Twitter">
                 <svg width="23.494" height="20.168">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>

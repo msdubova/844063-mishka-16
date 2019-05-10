@@ -33,16 +33,16 @@
           </ul>
           <ul class="page-header__list user-list">
             <li class="user-list__item">
-              <a class="user-list__link user-list__link--search" href="">
-                <svg class="site-list__svg" width="18" height="18" aria-label="Поиск" focusable="false">
+              <a class="user-list__link user-list__link--search" href="search-page.html" aria-label="Поиск">
+                <svg class="site-list__svg" width="18" height="18" focusable="false">
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
               </a>
             </li>
             <li class="user-list__item">
-              <a class="user-list__link" href="">
-                <svg class="site-list__svg" width="21" height="20" aria-label="Посмотреть корзину" aria-hidden="true" role="presentation" focusable="false">
+              <a class="user-list__link" href="cart-page.html" aria-label="Посмотреть корзину">
+                <svg class="site-list__svg" width="21" height="20" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина
@@ -51,10 +51,10 @@
           </ul>
           <ul class="page-header__list page-header__list--desktop site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="">Новые поступления</a>
+              <a class="site-list__link" href="new-page.html">Новые поступления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Распродажа</a>
+              <a class="site-list__link" href="sale-page.html">Распродажа</a>
             </li>
           </ul>
         </div>
@@ -67,7 +67,7 @@
           </div>
           <ul class="intro__list">
             <li class="intro__item">
-              <a class="intro__link" href="">
+              <a class="intro__link" href="interiors-page.html">
                 Предметы<br>интерьера
                 <svg width="60" height="62.411" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="#icon-interior"></use>
@@ -75,7 +75,7 @@
               </a>
             </li>
             <li class="intro__item">
-              <a class="intro__link" href="">
+              <a class="intro__link" href="toys-page.html">
                 Детские<br>игрушки
                 <svg width="60" height="59.62" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="#icon-toy"></use>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="bestseller__cart">
                   <b class="bestseller__price">Цена: 990 руб.</b>
-                  <button class="button bestseller__order js-button-modal" type="button" aria-label="Добавить товар в корзину">Заказать</button>
+                  <a class="button bestseller__order js-button-modal" href="addtocart-page.html" aria-label="Добавить товар в корзину">Заказать</a>
                 </div>
               </div>
               <picture class="bestseller__image">
@@ -195,7 +195,7 @@
               <button class="slider__toggle slider__toggle--backward" type="button" aria-label="Предыдущий отзыв"></button>
               <button class="slider__toggle slider__toggle--forward" type="button" aria-label="Следующий отзыв"></button>
             </p>
-            <button class="button feedback__apply" type="button" aria-label="Оставить свой положительный отзыв">Написать</button>
+            <a class="button feedback__apply" href="feedback-page.html" aria-label="Оставить свой положительный отзыв">Написать</a>
           </div>
         </section>
         <section class="section contacts">
@@ -204,7 +204,7 @@
             <div class="contacts__table">
               <div class="contacts__row">
                 <span class="contacts__field">e-mail:</span>
-                <span class="contacts__value contacts__value--mail">info@mimimishkashop.ru</span>
+                <a class="contacts__value contacts__value--mail" href="mailtous-page.html">info@mimimishkashop.ru</a>
               </div>
               <div class="contacts__row">
                 <span class="contacts__field">адрес:</span>
@@ -216,33 +216,35 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037875945433!2d30.320858716527443!3d59.93871647621458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554210739063!5m2!1sru!2sru" style="border: 0;" allowfullscreen></iframe>
           </div>
           <div class="contacts__container">
-            <button class="button contacts__button" type="button" aria-label="Написать письмо">Напишите нам</button>
+            <a class="button contacts__button" href="mailtous-page.html" aria-label="Написать письмо">Напишите нам</a>
           </div>
         </section>
       </main>
       <footer class="page-footer">
         <div class="page-footer__container container">
-          <svg class="page-footer__logo" width="102" height="35" aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
-            <use xlink:href="#logo-footer"></use>
-          </svg>
+          <a aria-label="Интернет-магазин милых вещиц для дома ручной работы Mishka">
+            <svg class="page-footer__logo" width="102" height="35">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="" aria-label=" Мы в Instagram">
+                <a class="social__link social__link--instagram" href="insta-#" aria-label=" Мы в Instagram">
                   <svg  width="21.769" height="21.334">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="" aria-label="Мы в Facebook">
+                <a class="social__link social__link--facebook" href="facebook-#" aria-label="Мы в Facebook">
                   <svg width="14.962" height="27.718">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="" aria-label="Мы в Twitter">
+                <a class="social__link social__link--twitter" href="twitter-#" aria-label="Мы в Twitter">
                   <svg width="23.494" height="20.168">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
