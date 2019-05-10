@@ -52,6 +52,10 @@
   line-height: 30px;
 }
 
+.feedback__apply {
+  display: block;
+  text-align: center;
+}
 
 @media (min-width: $tablet-width) {
   .feedback {

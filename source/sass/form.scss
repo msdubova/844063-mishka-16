@@ -160,7 +160,7 @@
 
   & .form__list-row:not(:last-of-type) {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   & .form__list-row:last-of-type {
@@ -178,7 +178,7 @@
   color: rgba(68, 68, 68, 0.3);
 
   & .form__legend {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   & svg {
@@ -256,7 +256,7 @@
 .form__phone,
 .form__mail {
   width: 100%;
-  height: 52px;
+  height: 50px;
 
   border: none;
   box-shadow: inset 0 -2px 0 0 black;
@@ -268,6 +268,10 @@
   &:not(:last-of-type) {
     margin-bottom: 22px;
   }
+}
+
+.form__phone {
+  height: 60px;
 }
 
 .form__label--text,
@@ -360,6 +364,10 @@
     }
   }
 
+  .form__text {
+    height: 52px;
+  }
+
   .form__fieldset--type {
     margin-bottom: 25px;
   }
@@ -424,9 +432,13 @@
   .form__fieldset--phone {
     margin-bottom: 25px;
 
+    & .form__legend {
+      padding-top: 10px;
+    }
+
     & input {
       padding-left: 15px;
-
+      height: 50px;
       background-color: transparent;
     }
 
@@ -437,6 +449,10 @@
 
   .form__fieldset--mail {
     margin-bottom: 20px;
+
+    & .form__legend {
+      padding-top: 10px;
+    }
 
     & input {
       padding-left: 15px;
@@ -469,7 +485,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 
   .form__fn {
@@ -534,6 +550,10 @@
   .form__fieldset--phone {
     padding-top: 25px;
 
+    & .form__legend {
+      padding-top: 15px;
+    }
+
     & input {
       margin-right: 114px;
       padding-left: 15px;
@@ -550,6 +570,10 @@
 
   .form__fieldset--mail {
     margin-bottom: 30px;
+
+    & .form__legend {
+      padding-top: 15px;
+    }
 
     & input {
       margin-right: 114px;

@@ -87,6 +87,10 @@
   font-size: 17px;
 }
 
+.bestseller__order {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .bestseller {
     position: relative;
