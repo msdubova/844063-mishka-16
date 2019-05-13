@@ -33,6 +33,11 @@
   height: 35px;
 }
 
+.page-header__logo-image > * {
+  width: 100%;
+  height: 100%;
+}
+
 .page-header__container--closed .page-header__toggle {
   position: absolute;
   top: 35px;
