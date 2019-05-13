@@ -21,6 +21,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     order: 2;
+    max-width: 70%;
   }
 
   .site-list__item {

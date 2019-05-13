@@ -31,6 +31,12 @@
   fill: #46c1ae;
 }
 
+@media (min-width: $tablet-width) {
+  .social__list {
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .social__list {
     justify-content: center;
