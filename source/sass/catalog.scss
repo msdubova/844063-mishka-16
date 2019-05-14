@@ -184,7 +184,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .catalog__list {
@@ -281,7 +281,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 84px;
+    margin-bottom: 45px;
   }
 
   .catalog__list {
