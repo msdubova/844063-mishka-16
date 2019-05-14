@@ -63,11 +63,11 @@
 
 .bestseller__image {
   width: 100%;
+}
 
-  & img {
-    display: block;
-    width: 100%;
-  }
+.bestseller__image img {
+  display: block;
+  width: 100%;
 }
 
 .bestseller__cart {
@@ -149,9 +149,10 @@
   }
 
   .bestseller__legend {
-    margin: 0;
-    top: -5px;
     position: relative;
+    top: -5px;
+
+    margin: 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -174,6 +175,7 @@
 
   .bestseller__price {
     padding: 35px 0;
+
     font-size: 20px;
   }
 
@@ -186,6 +188,7 @@
 @media (min-width: $desktop-width) {
   .bestseller {
     position: static;
+
     margin-bottom: 50px;
   }
 
@@ -237,9 +240,9 @@
 
   .bestseller__text {
     justify-content: flex-end;
+    padding-top: 160px;
     padding-right: 58px;
     padding-left: 175px;
-    padding-top: 160px;
   }
 
   .bestseller__table {

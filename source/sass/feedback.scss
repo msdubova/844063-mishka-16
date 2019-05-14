@@ -4,6 +4,7 @@
 
 .feedback__container {
   position: relative;
+
   padding-bottom: 50px;
 }
 
@@ -24,7 +25,6 @@
   background-size: contain;
 }
 
-
 .feedback__quote {
   margin: 0;
   padding: 0;
@@ -35,14 +35,15 @@
 .feedback__author {
   display: block;
   margin-top: 25px;
+
+  font-style: normal;
   font-size: 17px;
   line-height: 30px;
-  font-style: normal;
   color: rgb(0, 0, 0);
+}
 
-  & b {
-    font-weight: 700;
-  }
+.feedback__author b {
+  font-weight: 700;
 }
 
 .feedback__channel {
@@ -54,6 +55,7 @@
 
 .feedback__apply {
   display: block;
+
   text-align: center;
 }
 
@@ -89,10 +91,8 @@
     padding-bottom: 95px;
 
     background-image: url("../img/review@1x.jpg");
-    // background-color: aqua;
-    background-size: 350px auto;
-
     background-repeat: no-repeat;
+    background-size: 350px auto;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
