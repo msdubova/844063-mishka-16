@@ -53,7 +53,9 @@
   }
 }
 
-.form__legend h3 {
+.form__legend h3,
+.form__label--phone,
+.form__label--mail {
   margin: 0;
 
   font-weight: 700;
