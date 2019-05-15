@@ -6,23 +6,23 @@
   position: relative;
 
   padding-bottom: 50px;
-}
 
-.feedback__container::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-  display: block;
-  width: 100%;
-  height: 6px;
+    display: block;
+    width: 100%;
+    height: 6px;
 
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: contain;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+  }
 }
 
 .feedback__quote {
@@ -62,23 +62,23 @@
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
-  }
 
-  .feedback::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
 
-    display: block;
-    width: 100%;
-    height: 15px;
+      display: block;
+      width: 100%;
+      height: 15px;
 
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: contain;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: contain;
+    }
   }
 
   .feedback__container {
@@ -98,10 +98,10 @@
       (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
-  }
 
-  .feedback__container::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .feedback__title {
@@ -144,10 +144,10 @@
 @media (min-width: $desktop-width) {
   .feedback {
     position: static;
-  }
 
-  .feedback::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .feedback__container {

@@ -25,7 +25,7 @@
 .catalog__info {
   padding: 28px;
 
-  border: 1px solid #ededed;
+  border: 1px solid rgb(237, 237, 237);
 
   &:hover,
   &:focus,
@@ -53,7 +53,7 @@
 
   font-weight: 700;
   font-size: 17px;
-  color: $black-000;
+  color: rgb(0, 0, 0);
 }
 
 .catalog__shop {
@@ -65,7 +65,7 @@
 
   font-weight: 700;
 
-  border-top: 1px solid #ededed;
+  border-top: 1px solid rgb(237, 237, 237);
 }
 
 .catalog__button {
@@ -82,7 +82,7 @@
   &:focus svg {
     opacity: 1;
 
-    fill: #63d1bb;
+    fill: rgb(99, 209, 187);
   }
 
   &:active svg {
@@ -99,7 +99,7 @@
 .catalog__movie-container {
   padding: 24px 34px;
 
-  border: 1px solid #ededed;
+  border: 1px solid rgb(237, 237, 237);
 
   &--top {
     display: flex;
@@ -220,11 +220,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+  }
 
-    & .catalog__price {
-      font-size: 17px;
-      line-height: 24px;
-    }
+  .catalog__info .catalog__price {
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .catalog__movie {
@@ -232,7 +232,7 @@
 
     margin-top: 428px;
 
-    border: 1px solid #ededed;
+    border: 1px solid rgb(237, 237, 237);
 
     &:hover,
     &:focus {
@@ -274,7 +274,7 @@
     font-size: 15px;
   }
 
-  .catalog__movie-order {
+  .catalog__movie-container .catalog__movie-order {
     margin-bottom: 45px;
   }
 }

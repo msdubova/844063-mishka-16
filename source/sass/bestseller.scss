@@ -52,13 +52,13 @@
   box-sizing: border-box;
   padding: 10px 10px 10px 0;
 
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .bestseller__value {
   box-sizing: border-box;
 
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .bestseller__image {
@@ -96,31 +96,31 @@
     position: relative;
 
     margin-bottom: 35px;
-  }
 
-  .bestseller::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -20px;
-    left: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      left: 0;
 
-    height: 15px;
+      height: 15px;
 
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: contain;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: contain;
+    }
   }
 
   .bestseller__container {
     position: static;
 
     padding-bottom: 53px;
-  }
 
-  .bestseller__container::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .bestseller__title {
@@ -190,10 +190,10 @@
     position: static;
 
     margin-bottom: 50px;
-  }
 
-  .bestseller::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .bestseller__container {
@@ -218,20 +218,20 @@
     position: relative;
 
     justify-content: space-between;
-  }
 
-  .bestseller__info::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -100px;
-    left: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+      left: 0;
 
-    height: 23px;
+      height: 23px;
 
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+    }
   }
 
   .bestseller__legend {

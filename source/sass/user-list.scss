@@ -30,13 +30,13 @@
 .user-list__link:focus svg {
   opacity: 1;
 
-  fill: #63d1bb;
+  fill: rgb(99, 209, 187);
 }
 
 .user-list__link:active svg {
   opacity: 0.3;
 
-  fill: #63d1bb;
+  fill: rgb(99, 209, 187);
 }
 
 
@@ -48,7 +48,7 @@
   }
 
   .user-list__item {
-    border-left: 1px #cecece solid;
+    border-left: 1px rgb(206, 206, 206) solid;
     box-shadow: none;
   }
 

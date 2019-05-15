@@ -199,12 +199,11 @@
 
   .contacts__row {
     width: 100%;
-  }
 
-  .contacts__row:first-of-type {
-    padding-bottom: 0;
+    &:first-of-type {
+      padding-bottom: 0;
+    }
   }
-
 
   .contacts__field {
     min-width: 75px;

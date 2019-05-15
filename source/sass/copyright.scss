@@ -10,7 +10,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
-  color: $black-000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 
   &:active {
@@ -21,12 +21,12 @@
 .copyright__link svg {
   margin-left: 34px;
 
-  fill: #63d1bb;
+  fill: rgb(99, 209, 187);
 }
 
 .copyright__link:hover svg,
 .copyright__link:focus svg {
-  fill: #46c1ae;
+  fill: rgb(70, 193, 174);
 }
 
 @media (min-width: $tablet-width) {

@@ -54,22 +54,34 @@
 
     font-size: 20px;
     line-height: 22px;
-  }
 
-  .advantages__item:nth-of-type(1) {
-    order: 1;
+    &:nth-of-type(1) {
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 5;
+    }
+
+    &:nth-of-type(4) {
+      order: 2;
+    }
+
+    &:nth-of-type(5) {
+      order: 4;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
+    }
   }
 
   .advantages__item:nth-of-type(1) .advantages__icon {
     justify-content: center;
-  }
-
-  .advantages__item:nth-of-type(2) {
-    order: 3;
-  }
-
-  .advantages__item:nth-of-type(3) {
-    order: 5;
   }
 
   .advantages__item:nth-of-type(3) .advantages__icon {
@@ -77,20 +89,8 @@
     align-items: center;
   }
 
-  .advantages__item:nth-of-type(4) {
-    order: 2;
-  }
-
   .advantages__item:nth-of-type(4) .advantages__icon {
     align-items: center;
-  }
-
-  .advantages__item:nth-of-type(5) {
-    order: 4;
-  }
-
-  .advantages__item:nth-of-type(6) {
-    order: 6;
   }
 
   .advantages__icon {
