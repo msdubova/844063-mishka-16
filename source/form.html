@@ -73,9 +73,7 @@
           <div class="container">
             <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <div class="form__fieldset form__fieldset--type">
-              <div class="form__legend">
-                <h3>Тип</h3>
-              </div>
+              <h3 class="form__legend">Тип</h3>
               <div class="form__list">
                 <input class="visually-hidden" type="radio" name="type" id="interior" checked>
                 <label class="form__label form__label--radio" for="interior">Аксессуар для интерьера</label>
@@ -87,9 +85,7 @@
           <div class="form__container">
             <div class="container">
               <div class="form__fieldset form__fieldset--color">
-                <div class="form__legend">
-                  <h3>Цвет</h3>
-                </div>
+                <h3 class="form__legend">Цвет</h3>
                 <div class="form__list">
                   <input class="visually-hidden" type="checkbox" name="checkbox" id="white" checked>
                   <label class="form__label form__label--checkbox" for="white">Белый</label>
@@ -109,9 +105,7 @@
           </div>
           <div class="container">
             <div class="form__fieldset form__fieldset--name">
-              <div class="form__legend">
-                <h3>ФИО</h3>
-              </div>
+              <h3 class="form__legend">ФИО</h3>
               <div class="form__list">
                 <p class="form__list-row">
                   <label class="form__label form__label--text" for="name">Имя:</label>
@@ -131,18 +125,14 @@
           <div class="form__container">
             <div class="container">
               <div class="form__fieldset form__fieldset--phone">
-                <div class="form__legend">
-                  <label class="form__label--phone" for="phone-input">Тел</h3>
-                </div>
+                <label class="form__legend" for="phone-input">Тел</label>
                 <input class="form__phone" type="tel" name="telephone" id="phone-input" placeholder="+7 XXX XXX XX XX*">
                 <svg width="24.829" height="24.333">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </div>
               <div class="form__fieldset form__fieldset--mail">
-                <div class="form__legend">
-                  <label class="form__label--phone" for="mail-input">E-mail</label>
-                </div>
+                <label class="form__legend" for="mail-input">E-mail</label>
                 <input class="form__mail" type="email" name="email" id="mail-input" placeholder="Ваш Email*">
                 <svg width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
@@ -152,10 +142,8 @@
           </div>
           <div class="container form__container--last">
             <div class="form__fieldset form__fieldset--more">
-              <div class="form__legend">
-                <h3>Доп</h3>
-              </div>
-              <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <label class="form__legend" for="text-field">Доп</label>
+              <textarea class="form__textarea" id="text-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
             <div class="container__apply">
               <span class="form__fn">*Поля обязательны для заполнения</span>

@@ -38,6 +38,13 @@
 }
 
 .form__legend {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: rgb(99, 209, 187);
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,17 +60,6 @@
   }
 }
 
-.form__legend h3,
-.form__label--phone,
-.form__label--mail {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  color: rgb(99, 209, 187);
-  text-transform: uppercase;
-}
 
 .form__list input {
   font-size: 17px;
